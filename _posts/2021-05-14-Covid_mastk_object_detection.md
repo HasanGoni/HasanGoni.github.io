@@ -12,9 +12,9 @@
 
 One can actually use the following commands in a command line or use Jupyter notebook. If command line is used then at the begining of the line this ``!`` needs to be removed.
 So  
-`
+```bash
 !git clone https://github.com/pytorch/vision.git
-`
+```
 would be then 
 `git clone https://github.com/pytorch/vision.git`
 
