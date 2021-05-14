@@ -1,3 +1,4 @@
+# Clonining git
 #!git clone https://github.com/pytorch/vision.git
 #!git checkout v0.3.0
 
