@@ -1,4 +1,7 @@
-# Getting helper functions from Github repository
+# General description
+In this blog we will try to perform object detection using pytorch. We will be using small dataset (approximately 853 images). So transfer learning will be used here.
+
+One can write all necessary function from scratch. However pytorch provides some additional helper functions which makes object detection very easy. So we will be using those functions. To get all the scripts we need to clone the github repository. For jupyter notebook these are commands one needs to use to get all the functions.
 ```bash
 !git clone https://github.com/pytorch/vision.git
 !git checkout v0.3.0
@@ -9,8 +12,7 @@
 !cp vision/references/detection/coco_utils.py ./
 !cp vision/references/detection/engine.py ./
 ```
-
-One can actually use the following commands in a command line or use Jupyter notebook. If command line is used then at the begining of the line this ``!`` needs to be removed.
+If command line is used then at the begining of the line this ``!`` needs to be removed.
 So  
 ```bash
 !git clone https://github.com/pytorch/vision.git
@@ -33,10 +35,24 @@ Then we need to put some time or iterator so that all data will be converted som
 2. Dataloader
 
 ## Data preparation
+At first we will do some preprocessing, so that will give the name of the iamge and x, y pair will be created, i.e. the image and the coordinate of the bounding box.
+
 We have two folders containing the data we require. 
 1. images --> contains images in png format
 2. annotations --> conatains xml file where each images bounding box location can be found. So we need some type of function where will use filename as an input and the output will be then all bounding box location in that xml file
 ```python
+def x_h(x, obj):
+    """
+    helper function during xml file reading
+    x:str: name of the tag
+    obj: obj from where this string 
+    will be searched
+    
+    integer tag value actually here
+    xmin, xmax, ymin, ymax value retrieve helper
+    """
+    return int(obj.find(x).text)
+
 def file_to_annot(filename):
     """
     Convert xml file to annotation of image 
@@ -55,6 +71,21 @@ def file_to_annot(filename):
         tags_ = bboxes, tags
     return tags_
 ```
+So we have this  ``file_to_annot`` function which will convert the xml file to the related tags and position of the bounding box position of this tag. There is a possibility that each xml file conatains more than one tags, therefore all the tags will be added in a list.
+
+We have our y is ready to crate pytorch Dataset. Now we need x. To create iamge from filename we will be using PIL imaging libray.
+
+```python
+from PIL import Image
+img = Image.open(image_filename).convert('RGB')
+```
+Now we are ready to create pytorch Dataset. We will create a class which will be inherited from ``torch.utils.data.Dataset```. Our create Dataset will have two properties.
+1. Indexing: means when we can say Dataset[3] and it will give us 4th value of datset(image and bounding boxes)
+2. Length: if we say len(Dataset) it will give us length of the dataset
+
+In python normally ``__getitem__`` is reponsible for indexing and ``__len__`` is reponsible for length. So when try to index something pyhton called ``__getitem__`` function. So we need to implement ``__getitem__`` function in a way that, it will create image and tell the tags and bounding boxes of that image. We actually already implemented everything, we just need to put them in ``__getitem__`` function.
+
+One last thing we need to consider is the number of indexing. When we 
 
 
 
