@@ -40,6 +40,7 @@ At first we will do some preprocessing, so that will give the name of the iamge 
 We have two folders containing the data we require. 
 1. images --> contains images in png format
 2. annotations --> conatains xml file where each images bounding box location can be found. So we need some type of function where will use filename as an input and the output will be then all bounding box location in that xml file
+
 ```python
 def x_h(x, obj):
     """
@@ -52,6 +53,8 @@ def x_h(x, obj):
     xmin, xmax, ymin, ymax value retrieve helper
     """
     return int(obj.find(x).text)
+```
+```python
 
 def file_to_annot(filename):
     """
