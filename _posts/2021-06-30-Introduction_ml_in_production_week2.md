@@ -1,4 +1,5 @@
 * This is class notes of week 2
+* [First week class lecture](https://hasangoni.github.io/2021/06/30/Introduction-to-machine-learning-in-production-1st-week.html)
 # Selecting and training a model
 
 
@@ -215,3 +216,6 @@ Following things needs to be remember when searching for tools for experiment tr
 * Is defined consistency (defination of y label is unambigous)
 * Has timely feedback from the production data(distribution covers data drift and concept drift).
 * Is sized appropriately.
+
+
+[3rd week class notes](https://hasangoni.github.io/2021/06/30/Introduction_to_machine_learning_to_production.html)

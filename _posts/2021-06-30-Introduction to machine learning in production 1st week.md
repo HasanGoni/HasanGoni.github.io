@@ -91,3 +91,4 @@ User Data --> user profile --> Recommender system --> product recommendation.
     1. User data generally has slower drift
     2. Enterprise data (B2B applications) can shift fast
 
+[Second week class notes](https://hasangoni.github.io/2021/06/30/Introduction_ml_in_production_week2.html)

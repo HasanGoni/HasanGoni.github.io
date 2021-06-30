@@ -1,3 +1,6 @@
+[Week 1 class lecture](https://hasangoni.github.io/2021/06/30/Introduction-to-machine-learning-in-production-1st-week.html)
+
+[Week 2](https://hasangoni.github.io/2021/06/30/Introduction_ml_in_production_week2.html)
 [Introduction to Machine learning in Production](https://www.coursera.org/learn/introduction-to-machine-learning-in-production/home/welcome) 3 week
 * This is class lecture of the 3rd week
 
