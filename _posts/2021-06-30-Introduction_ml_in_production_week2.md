@@ -136,7 +136,7 @@ Example | Label | Prediction | Car Noise
 
 
 ## Data iteration
-<img src='/images/aug.png'/>
+<img src='/images/aug.png'>
 * It is like rubber band, if you increase the data of some type means, the you pull the rubber band, and subsequent places which is near to this point also goes up.
 * But not the point which is further. However after increasing the data point may be the point will move and you need to concentrate on different point, which can be found by error analyis.
 
