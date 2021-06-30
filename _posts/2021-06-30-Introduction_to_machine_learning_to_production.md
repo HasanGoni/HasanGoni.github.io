@@ -221,7 +221,8 @@
 * Try to be far from the comfort zone of the metric both ML Engineers and the business people and try to agree on a metric.
 * If we somehow do back profiling or do Fermi estimate, how Ml metrics correlate with business metric, may be this would be a nice agreement.
 * Need to consider Ethical consideration.
-<img src='../images/milestone.png'/>
 
 
 ## Milestones and resourcing
+
+<img src='../images/milestone.png'/>
