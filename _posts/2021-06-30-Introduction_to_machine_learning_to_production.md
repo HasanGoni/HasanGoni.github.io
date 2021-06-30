@@ -8,7 +8,7 @@
 * different labellers can detect different boxes. It is OK to use same labellers data, but if algorithm uses $1/3$ from one labeller and other from other labeller, then it is a problem.
 * The upper problem introduces `` label consistency`` problem in algorithm.
 
-<img src='../images/ml_pipe.png'>
+<img src='/images/ml_pipe.png'>
 
 * In this week we will be working on data part of the machine learning pipeline.
 * what is x and y and how to make consistent label
