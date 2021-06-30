@@ -4,7 +4,4 @@ This is the link of all blog posts categorized based on topics. At present it is
 ## Computer vision
 ### Object Detection
 [Covid Mask detection](https://hasangoni.github.io/2021/05/14/Covid_mastk_object_detection.html)
-### Image Segementation
-### Classification
-### Multiclass Classificaiton
 

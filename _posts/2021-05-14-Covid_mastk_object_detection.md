@@ -88,7 +88,114 @@ Now we are ready to create pytorch Dataset. We will create a class which will be
 
 In python normally ``__getitem__`` is reponsible for indexing and ``__len__`` is reponsible for length. So when try to index something pyhton called ``__getitem__`` function. So we need to implement ``__getitem__`` function in a way that, it will create image and tell the tags and bounding boxes of that image. We actually already implemented everything, we just need to put them in ``__getitem__`` function.
 
-One last thing we need to consider is the number of indexing. When we 
+
+One last thing we need to consider is the number of indexing. When we say we will be indexing, we need to somehow connect xml file and image file. So when we call a number for example 3 it will create same image and also same xml file for tagging and bounding box. Let's see what the image file and annotation filename is saved in the subsequent folder. To see the file we can simply use ``os module`` or ``pathlib module``. I will be using ``pathlib module``. For future simplicity I am adding one additional functionality(stolen from fastai library, fastai function has some additional feature) to the pathlib module. 
+
+```python from pathlib import Path
+
+Path.ls = lambda x: list(x.iterdir())
+``` 
+
+```python
+im_path = Path('images')
+ann_path = Path('annotations')
+
+print(im_path.ls())
+print(ann_path.ls())
+```
+Both image and annotation has a name part and at the end of the file there is a number. Difference between iamge and annotation file is only the extension(.png and .xml). We somehow needs to sort the filename based on this number. In python ``sorted`` function has a option called key, where one can put function which will be used for sorting. 
+We need another function which gives us a number from the filename. We can use ``regualr expression`` for that. 
+
+```python
+import re
+def digit_search(filename, pat):
+    """
+    return  integer digit from a filename
+    
+    """
+    # declaring the pattern which we are searching for. () is used to create a group. \d is 
+    # to tell that, search for digit and + sign detects one or more digits(1, 32 or 320) as we don't know how much digit and then after digit .png/.xml will be available
+    # im_pat = re.compile(r'(\d+).png')
+    # annotation_pat = re.compile(r'(\d+).xml')
+    return int(re.findall(path, filename)) # filename needs to be string. if it is pathlib.Path then needs to be converted into string. filename.as_posix() will convert it 
+    ```
+So now we will sort all the files in the folder based on this digit. As a result we can ensure when we call the index number 10, then it will be the same image and xml file. 
+
+
+Now we have everything we needed to create our `Dataset`.  We will be putting everything together.
+
+```python
+
+class DataSet_(torch.utils.data.Dataset):
+    def __init__(self, root, transforms=None):
+        self.root = root
+        self.transforms = transforms
+        im_pat = re.compile(r'(\d+).png')
+        annot_pat = re.compile(r'(\d+).xml')
+        # Selecting only images file and xml file from 
+        # both of the folders
+        imgs =[i for i in im_path.ls() if '.png' in i.as_posix()]
+        ann =[i for i in anno_path.ls() if '.xml' in i.as_posix()]
+        # Sorting based on digit in file name
+        self.imgs = sorted(im_path.ls(), key = lambda x: int(re.findall(im_pat, x.as_posix())[0]))
+        self.annot = sorted(anno_path.ls(), key = lambda x:int(re.findall(annot_pat, x.as_posix())[0]))
+        # first class is for backround
+        self.classes = [_, 'with_mask', 'without_mask', 'mask_weared_incorrect']
+
+    def __getitem__(self, idx):
+        im_p = self.imgs[idx]
+        annot_p = self.annot[idx]
+
+        img = Image.open(im_p).convert('RGB')
+
+        bbox, label = file_to_annot(annot_p)
+
+        num_objs = len(bbox)
+      
+        bboxes = torch.as_tensor(bbox, dtype=torch.float32)
+        labels = [self.classes.index(i) for i in label]
+        
+      
+        labels = torch.as_tensor(labels, dtype=torch.int64)
+
+        image_id = torch.tensor([idx])
+        
+        iscrowd = torch.zeros((num_objs,), dtype=torch.int64)
+        area = (bboxes[:, 3] - bboxes[:, 1]) * (bboxes[:, 2] - bboxes[:,0])
+        
+        target = {}
+        target['boxes'] = bboxes
+        target['labels'] = labels
+        target['image_id'] = image_id
+        target["iscrowd"] = iscrowd
+
+        if self.transforms is not None:
+            img, target = self.transforms(img, target)
+        return img, target
+
+    def __len__(self):
+        return len(self.imgs)
+
+```
+In the class creation I have used regular expression in a different form. One can use both (like shown in class function lambda function or creating actual function like previously).
+
+Also to work in pytorch we need to convert everything in tensor, thats also done there. 
+
+So now we need to tell where the root directory is available, then this Dataset_ class will create (x,y) pair list, where x will be a image, y will be (boxes[box coordinate list], labels[name of the bounding box class], image_id[id of the image], iscrowd[this is for coco dataset, we don't need it but to use the utility function we will keep it])
+
+def get_transform(train):
+    transforms = []
+    # convert PILImage to tensor
+    transforms.append(T.ToTensor())
+ 
+    if train:
+        # transformation only occured during training
+        transforms.append(T.RandomHorizontalFlip(0.5))
+    return T.Compose(transforms)
+
+
+def collate_fn(batch):
+    return tuple(zip(*batch))
 
 
 
