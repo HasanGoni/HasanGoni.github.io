@@ -1,4 +1,4 @@
-#[Introduction to Machine learning in Production](https://www.coursera.org/learn/introduction-to-machine-learning-in-production/home/welcome) 3 week
+[Introduction to Machine learning in Production](https://www.coursera.org/learn/introduction-to-machine-learning-in-production/home/welcome) 3 week
 * This is class lecture of the 3rd week
 
 
