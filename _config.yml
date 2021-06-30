@@ -6,12 +6,12 @@
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 
-title: Covid mask detection
-description: Tranfer Learning in Oject Detection using Faster RNN in Pytorch
+title: Hasan's Post
+description: This is the blog post 
 github_username: HasanGoni
 
 # Email and twitter are optional:
-email:
+email:hasanme1412@gmail.com
 twitter_username:
 
 # Set this to true to get LaTeX math equation support
