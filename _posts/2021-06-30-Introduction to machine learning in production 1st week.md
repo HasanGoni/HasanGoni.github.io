@@ -1,4 +1,4 @@
-# Introduction to machine learning in Production week 1
+# Introduction to machine learning in production week 1
 ## Common Deployment cases
 1. New product/ capability
 2. Automate / assist with manual task
