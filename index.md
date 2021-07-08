@@ -14,7 +14,7 @@ This is the link of all blog posts categorized based on topics. At present it is
 
 ### Git Tutorial
 * [Command line basics](https://hasangoni.github.io/2021/07/08/Command-Line-Basics.html)
-[Fixing mistake and bad comments](https://hasangoni.github.io/2021/07/08/Fixing-Mistakes-And-Bad-Comments.html)
+* [Fixing mistake and bad comments](https://hasangoni.github.io/2021/07/08/Fixing-Mistakes-And-Bad-Comments.html)
 
 ### Linux server preparation for deployment 
 [Deploying an app in a linux server using linode](https://hasangoni.github.io/2021/07/07/Deploying-app-in-a-linux-server.html)
