@@ -1,5 +1,6 @@
 source [Corey Schafer Tutorial](https://www.youtube.com/watch?v=FdZecVxzJbk&list=PL-osiE80TeTuRUfjRe54Eea17-YfnOOAx&index=2&ab_channel=CoreySchafer)
 
+## Basic command line tutorial can be found [here](https://hasangoni.github.io/2021/07/08/Command-Line-Basics.html)
 # Branch change
 * For example we have made changes in a file. After some time, we have found that we no longer needed to those chnages. And we are in master branch. There is another branch available, which is not previously same as master branch. Now we have some changes in master branch. Therefore simple checkout can help us in this scenario. 
 

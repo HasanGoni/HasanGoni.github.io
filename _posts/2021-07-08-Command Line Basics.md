@@ -90,3 +90,5 @@
   `` git branch -d new_branch``
   * Delete branch from remote repository
   `` git push origin --delete new_branch`` 
+
+### More advanced tutorial can be found [here](https://hasangoni.github.io/2021/07/08/Fixing-Mistakes-And-Bad-Comments.html)
