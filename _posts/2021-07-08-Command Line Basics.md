@@ -1,3 +1,6 @@
+* This tutorial is taken from Corey schafer youtube video
+
+
 * At first we need to configure the global configuration. That means who is working with the projects
 * `` git config --global user.name "HasanGoni"``
 * `` git config --global user.email "hasanme1412@gmail.com"``
