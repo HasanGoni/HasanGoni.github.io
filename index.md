@@ -1,20 +1,20 @@
 This is the link of all blog posts categorized based on topics. At present it is not so much organized. I will try in future to make it more readable and user friendly. For my referece this is the link for [Markdown](https://guides.github.com/features/mastering-markdown/).
 
 
-## Computer vision
-### Object Detection
-[Covid Mask detection](https://hasangoni.github.io/2021/05/14/Covid_mastk_object_detection.html)
+* ## Computer vision
+    1. ### Object Detection
+        * [Covid Mask detection](https://hasangoni.github.io/2021/05/14/Covid_mastk_object_detection.html)
 
-## ML in production (coursera)
-### Introduction to ML in production
-* [course 1 week 1](https://hasangoni.github.io/2021/06/30/Introduction-to-machine-learning-in-production-1st-week.html)
-* [course 1 week 2](https://hasangoni.github.io/2021/06/30/Introduction_ml_in_production_week2.html)
-*  [course 1 week 3](https://hasangoni.github.io/2021/06/30/Introduction_to_machine_learning_to_production.html)
-## Tutorial
+* ## ML in production (coursera)
+    1. ### Introduction to ML in production
+        * [course 1 week 1](https://hasangoni.github.io/2021/06/30/Introduction-to-machine-learning-in-production-1st-week.html)
+        * [course 1 week 2](https://hasangoni.github.io/2021/06/30/Introduction_ml_in_production_week2.html)
+        *  [course 1 week 3](https://hasangoni.github.io/2021/06/30/Introduction_to_machine_learning_to_production.html)
 
-### Git Tutorial
-* [Command line basics](https://hasangoni.github.io/2021/07/08/Command-Line-Basics.html)
-* [Fixing mistake and bad comments](https://hasangoni.github.io/2021/07/08/Fixing-Mistakes-And-Bad-Comments.html)
+    2. ### Linux server preparation for deployment 
+        * [Deploying an app in a linux server using linode](https://hasangoni.github.io/2021/07/07/Deploying-app-in-a-linux-server.html)
+* ## Tutorial
 
-### Linux server preparation for deployment 
-[Deploying an app in a linux server using linode](https://hasangoni.github.io/2021/07/07/Deploying-app-in-a-linux-server.html)
+    * ### Git Tutorial
+        * [Command line basics](https://hasangoni.github.io/2021/07/08/Command-Line-Basics.html)
+        * [Fixing mistake and bad comments](https://hasangoni.github.io/2021/07/08/Fixing-Mistakes-And-Bad-Comments.html)
