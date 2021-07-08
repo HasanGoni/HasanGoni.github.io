@@ -62,31 +62,31 @@
 * ``git push origin master`` --> origin is the name of the remote directory and master is the branch where we want to push
 
 # Common Workflow
-  ## Create branch
+  * Create branch
   ``git branch new_branch``
-  ## Go to that branch
+  * Go to that branch
   ``git checkout new_branch``
-  ## Adding file
+  * Adding file
   `` git add -A``
-  ## Commit
+  * Commit
   `` git commit -m "message Information"``
-  ## Pushing in Remote 
+  * Pushing in Remote 
   `` git push name_of remote_directory name_of_local_branch``
   `` git push origin new_branch``
-  ## Show available branch
+  * Show available branch
   `` git branch -a``
-  ## Checking out local master
+  * Checking out local master
   `` git checkout master``
   `` git pull origin master``
-  ## Check which branches are merged
+  * Check which branches are merged
   `` git branch --merged``
-  ## Merging with master
+  * Merging with master
   `` git merge new_brach`` when you are in master branch 
-  ## Push to remote brach
+  * Push to remote brach
   `` git push oringin master``
-  ## Check again all the merges
+  * Check again all the merges
   `` git branch --merged``
-  ## Delete new creeated branch
+  * Delete new creeated branch
   `` git branch -d new_branch``
-  ## Delete branch from remote repository
+  * Delete branch from remote repository
   `` git push origin --delete new_branch`` 
