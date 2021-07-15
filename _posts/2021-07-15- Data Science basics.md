@@ -171,7 +171,7 @@ You could use the Variance Inflation Factors (VIF) to determine if there is any 
   * Probability of unfair coin is $P(A)$.
     Probability of 10 time head is $P(B)$.
 
-    So we need to find out $P(A|B)$
+    So we need to find out $$P(A|B)$$
 
     from Bayes theorem
     $$ P(A|B) = \frac{P(A)* P(B|A)}{P(B|A)* p(A)+ P(B| notA)P(not A)}$$
