@@ -193,8 +193,8 @@ You could use the Variance Inflation Factors (VIF) to determine if there is any 
   4. $P(A or B) = P(A) + P(B)$ when disjoint or mutually exclusive
   5. $P(A or B) = P(A) + P(B) - P(A and B)$ 
   6. $P(A and B) = P(A) * P(B)$ when $A$ and $B$ independent
-  7. $P(A and B) = P(A) * P(B|A)$ 
-  8. $P(A|B) = P(A and B)| P(B)$
+  7. $P(A and B) = P(A) * P(B\|A)$ 
+  8. $P(A\|B) = P(A and B)| P(B)$
 
 * Describe Markov chain
   * A Markov chain is a stochastic model describing a sequence of possible events in which the probability of each event depends only on the state attained in the previous event
