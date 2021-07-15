@@ -350,7 +350,6 @@ There are many things that you can do to control and minimize bias. Two common t
   The null hypothesis would state that males and females are the same height on average, while the alternative hypothesis would state that the average height of males is greater than the average height of females.
 Then you would collect a random sample of heights of males and females and use a t-test to determine if you reject the null or not.
 
-<img src='/images/milestone.png'/>
 <img src='/images/prb.png'/>
 <img src='/images/prb2.png'>
 <img src='/images/prb3.png'>
