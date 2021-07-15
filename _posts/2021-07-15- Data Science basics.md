@@ -149,7 +149,8 @@ You could use the Variance Inflation Factors (VIF) to determine if there is any 
 * What is a kernel? Explain the kernel trick ?
   * A kernel is a way of computing the dot product of two vectors 𝐱x and 𝐲y in some (possibly very high dimensional) feature space, which is why kernel functions are sometimes called “generalized dot product
   * The kernel trick is a method of using a linear classifier to solve a non-linear problem by transforming linearly inseparable data to linearly separable ones in a higher dimension.
-  <img src='images/kernel.png'>
+
+  <img src='../images/kernel.png'>
 
 * Is it beneficial to perform dimensionality reduction before fitting an SVM? Why or why not?
   * When the number of features is greater than the number of observations, then performing dimensionality reduction will generally improve the SVM.
@@ -249,7 +250,8 @@ You could use the Variance Inflation Factors (VIF) to determine if there is any 
   * You would perform hypothesis testing to determine statistical significance. First, you would state the null hypothesis and alternative hypothesis. Second, you would calculate the p-value, the probability of obtaining the observed results of a test assuming that the null hypothesis is true. Last, you would set the level of the significance (alpha) and if the p-value is less than the alpha, you would reject the null — in other words, the result is statistically significant.
 
 * Explain what a long-tailed distribution is and provide three examples of relevant phenomena that have long tails. Why are they important in classification and regression problems?
-  * <img src='images/long_tailed.png'>
+
+   <img src='../images/long_tailed.png'>
   * pareto principle (80/20 rule)
   * Best selling vs other product sales
   * Power law
@@ -325,7 +327,7 @@ Exponential distributions — eg. the amount of time that a car battery lasts or
   Eg. flipping heads from fair coin 100,000 times should be closer to 0.5 than 100 times.
 
 * How do you calculate the needed sample size?
-* <img src='images/sample_size.png'>
+* <img src='../images/sample_size.png'>
 
 * When you sample, what bias are you inflicting?
   * Potential biases include the following:
@@ -348,9 +350,9 @@ There are many things that you can do to control and minimize bias. Two common t
   The null hypothesis would state that males and females are the same height on average, while the alternative hypothesis would state that the average height of males is greater than the average height of females.
 Then you would collect a random sample of heights of males and females and use a t-test to determine if you reject the null or not.
 
-<img src='images/prb.png'>
-<img src='images/prb2.png'>
-<img src='images/prb3.png'>
+<img src='../images/prb.png'>
+<img src='../images/prb2.png'>
+<img src='../images/prb3.png'>
 
 *  An HIV test has a sensitivity of 99.7% and a specificity of 98.5%. A subject from a population of prevalence 0.1% receives a positive test result. What is the precision of the test (i.e the probability he is HIV positive)?
   * $$ Precision(PPV = Positive predictive value) = \frac{prevalence * sensitivity}{(prevalence * sensitivity) + (1 - prevalence)* (1 - specifity)}$$
