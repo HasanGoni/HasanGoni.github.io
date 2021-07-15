@@ -56,8 +56,8 @@
 * Your organization has a website where visitors randomly receive one of two coupons. It is also possible that visitors to the website will not receive a coupon. You have been asked to determine if offering a coupon to website visitors has any impact on their purchase decisions. Which analysis method should you use
   * One way ANOVA
 
-* What is the purpose of A/B testing ?
-  * This is statistical hypothesis testing for randomized experiments with two variables, A and B. The objective of A/B testing is to detect any changes to a web page to maximize or increase the outcome of a strategy.
+* What is the purpose of/B testing ?
+  * This is statistical hypothesis testing for randomized experiments with two variables, A and B. The objective of/B testing is to detect any changes to a web page to maximize or increase the outcome of a strategy.
 
 * What is the law of large numbers?
   * It is a theorem that describes the result of performing the same experiment very frequently. This theorem forms the basis of frequency-style thinking. It states that the sample mean, sample variance, and sample standard deviation converge to what they are trying to estimate.
@@ -142,7 +142,7 @@ One way to improve such an algorithm that uses Naive Bayes is by decorrelating t
 You could use the Variance Inflation Factors (VIF) to determine if there is any multicollinearity between independent variables — a standard benchmark is that if the VIF is greater than 5 then multicollinearity exists.
 
 * How to check if the regression model fits the data well ?
-  * R-squared/Adjusted R-squared: Relative measure of fit. This was explained in a previous answer
+  * R-squar/Adjusted R-squared: Relative measure of fit. This was explained in a previous answer
  F1 Score: Evaluates the null hypothesis that all regression coefficients are equal to zero vs the alternative hypothesis that at least one doesn’t equal zero
  RMSE: Absolute measure of fit.
 
@@ -150,7 +150,7 @@ You could use the Variance Inflation Factors (VIF) to determine if there is any 
   * A kernel is a way of computing the dot product of two vectors 𝐱x and 𝐲y in some (possibly very high dimensional) feature space, which is why kernel functions are sometimes called “generalized dot product
   * The kernel trick is a method of using a linear classifier to solve a non-linear problem by transforming linearly inseparable data to linearly separable ones in a higher dimension.
 
-  <img src='../images/kernel.png'>
+  <img src='/images/kernel.png'>
 
 * Is it beneficial to perform dimensionality reduction before fitting an SVM? Why or why not?
   * When the number of features is greater than the number of observations, then performing dimensionality reduction will generally improve the SVM.
@@ -208,8 +208,8 @@ You could use the Variance Inflation Factors (VIF) to determine if there is any 
   * if we think for each game to play we need to spend $5
   * We have 2 dices, which have 36 combination.
   * possibility of adding 5 is 4.
-  * So we have a probability = $/frac{4}{36}$ = $\frac{1}{9}$
-  * Theoratically 9 times needs to be play to win a game. 9 times cost $10/$ - 9*5\$$ =$-35\$$
+  * So we have a probability =/frac{4}{36}$ = $\frac{1}{9}$
+  * Theoratically 9 times needs to be play to win a game. 9 times cost $/$ - 9*5\$$ =$-35\$$
 
 * How can you tell if a given coin is biased
   * Hypothesis testing
@@ -225,7 +225,7 @@ You could use the Variance Inflation Factors (VIF) to determine if there is any 
   $ P(heads) * P(Tails) = P(tails) * P(heads)$
   * This makes sense since each coin toss is an independent event. This means that if you get heads → heads or tails → tails, you would need to reflip the coin.
 
-* You are about to get on a plane to London, you want to know whether you have to bring an umbrella or not. You call three of your random friends and ask each one of them if it’s raining. The probability that your friend is telling the truth is 2/3 and the probability that they are playing a prank on you by lying is 1/3. If all 3 of them tell that it is raining, then what is the probability that it is actually raining in London
+* You are about to get on a plane to London, you want to know whether you have to bring an umbrella or not. You call three of your random friends and ask each one of them if it’s raining. The probability that your friend is telling the truth is/3 and the probability that they are playing a prank on you by lying is/3. If all 3 of them tell that it is raining, then what is the probability that it is actually raining in London
   *  Assume the Probability or raining is 0.25
   * Assume The probability of raining is P(A) = 0.25
   * The question is Probability of raining when three friends are telling it is raining P(A|B)
@@ -242,7 +242,7 @@ You could use the Variance Inflation Factors (VIF) to determine if there is any 
   $$P(not A and not B) = P(not A) * P(not B | not A)$$
   For example:
   $$P(not 4 and not yellow) = P(not 4) * P(not yellow | not 4)$$
-  $$P(not 4 and not yellow) = (36/39) * (27/36)$$
+  $$P(not 4 and not yellow) = (/39) * (/36)$$
   $$P(not 4 and not yellow) = 0.692$$
   Therefore, the probability that the cards picked are not the same number and the same color is 69.2%.
 
@@ -251,8 +251,8 @@ You could use the Variance Inflation Factors (VIF) to determine if there is any 
 
 * Explain what a long-tailed distribution is and provide three examples of relevant phenomena that have long tails. Why are they important in classification and regression problems?
 
-   <img src='../images/long_tailed.png'>
-  * pareto principle (80/20 rule)
+   <img src='/images/long_tailed.png'>
+  * pareto principle (/20 rule)
   * Best selling vs other product sales
   * Power law
 
@@ -298,7 +298,7 @@ You could use the Variance Inflation Factors (VIF) to determine if there is any 
 * How do you handle missing data? What imputation techniques do you recommend?
   There are several ways to handle missing data:
   Delete rows with missing data
-  Mean/Median/Mode imputation
+  Me/Medi/Mode imputation
   Assigning a unique value
   Predicting the missing values
   Using an algorithm which supports missing values, like random forests
@@ -327,7 +327,7 @@ Exponential distributions — eg. the amount of time that a car battery lasts or
   Eg. flipping heads from fair coin 100,000 times should be closer to 0.5 than 100 times.
 
 * How do you calculate the needed sample size?
-* <img src='../images/sample_size.png'>
+* <img src='/imagese/sample_size.png'>
 
 * When you sample, what bias are you inflicting?
   * Potential biases include the following:
@@ -342,17 +342,18 @@ There are many things that you can do to control and minimize bias. Two common t
 * What are confounding variables?
   * A confounding variable, or a confounder, is a variable that influences both the dependent variable and the independent variable, causing a spurious association, a mathematical relationship in which two or more variables are associated but not causally related.
 
-* What is A/B testing?
-  * A/B testing is a form of hypothesis testing and two-sample hypothesis testing to compare two versions, the control and variant, of a single variable. It is commonly used to improve and optimize user experience and marketing.
+* What is/B testing?
+  */B testing is a form of hypothesis testing and two-sample hypothesis testing to compare two versions, the control and variant, of a single variable. It is commonly used to improve and optimize user experience and marketing.
 
 * How do you prove that males are on average taller than females by knowing just gender height?
   * You can use hypothesis testing to prove that males are taller on average than females.
   The null hypothesis would state that males and females are the same height on average, while the alternative hypothesis would state that the average height of males is greater than the average height of females.
 Then you would collect a random sample of heights of males and females and use a t-test to determine if you reject the null or not.
 
-<img src='../images/prb.png'>
-<img src='../images/prb2.png'>
-<img src='../images/prb3.png'>
+<img src='/images/milestone.png'/>
+<img src='/images/prb.png'/>
+<img src='/images/prb2.png'>
+<img src='/images/prb3.png'>
 
 *  An HIV test has a sensitivity of 99.7% and a specificity of 98.5%. A subject from a population of prevalence 0.1% receives a positive test result. What is the precision of the test (i.e the probability he is HIV positive)?
   * $$ Precision(PPV = Positive predictive value) = \frac{prevalence * sensitivity}{(prevalence * sensitivity) + (1 - prevalence)* (1 - specifity)}$$
@@ -374,13 +375,13 @@ Then you would collect a random sample of heights of males and females and use a
   * Since this is a Poisson distribution question, mean = lambda = variance, which also means that standard deviation = square root of the mean
   a 95% confidence interval implies a z score of 1.96
   one standard deviation = 10
-  Therefore the confidence interval = 100 +/- 19.6 = [964.8, 1435.2]
+  Therefore the confidence interval = 100/- 19.6 = [964.8, 1435.2]
 
 * The homicide rate in Scotland fell last year to 99 from 115 the year before. Is this reported change really noteworthy?
    * Since this is a Poisson distribution question, mean = lambda = variance, which also means that standard deviation = square root of the mean
 a 95% confidence interval implies a z score of 1.96
 one standard deviation = sqrt(115) = 10.724
-Therefore the confidence interval = 115+/- 21.45 = [93.55, 136.45]. Since 99 is within this confidence interval, we can assume that this change is not very noteworthy.
+Therefore the confidence interval = 11/- 21.45 = [93.55, 136.45]. Since 99 is within this confidence interval, we can assume that this change is not very noteworthy.
 
 * In a population of interest, a sample of 9 men yielded a sample average brain volume of 1,100cc and a standard deviation of 30cc. What is a 95% Student’s T confidence interval for the mean brain volume in this new population?
   * $$ \bar{X}\pm t\frac{s}{\sqrt{n}}$$
@@ -391,9 +392,9 @@ Therefore the confidence interval = 115+/- 21.45 = [93.55, 136.45]. Since 99 is 
   * confidence interval = [1000$\pm$ 2.306 * $\frac{30}{3}$]
 
 * A diet pill is given to 9 subjects over six weeks. The average difference in weight (follow up — baseline) is -2 pounds. What would the standard deviation of the difference in weight have to be for the upper endpoint of the 95% T confidence interval to touch 0?
-  * Upper bound = mean + t-score*(standard deviation/sqrt(sample size))
-0 = -2 + 2.306*(s/3)
-2 = 2.306 * s / 3
+  * Upper bound = mean + t-score*(standard deviati/sqrt(sample size))
+0 = -2 + 2.306*/3)
+2 = 2.306 * / 3
 s = 2.601903
 Therefore the standard deviation would have to be at least approximately 2.60 for the upper bound of the 95% T confidence interval to touch 0.
 
@@ -523,15 +524,15 @@ Event B: One random variable is smaller than 3 and two are larger than 3.
 
 Given these two events satisfy the condition of the median > 3, we can now calculate the probability of both of the events occuring. The question can now be rephrased as P(Median > 3) = P(A) + P(B).
 
-Let's calculate the probability of the event A. The probability that a random variable > 3 but less than 4 is equal to 1/4. So the probability of event A is:
+Let's calculate the probability of the event A. The probability that a random variable > 3 but less than 4 is equal to/4. So the probability of event A is:
 
-P(A) = (1/4) * (1/4) * (1/4) = 1/64
+P(A) = /4) * /4) * /4) =/64
 
-The probability of event B is that two values must be greater than 3, but one random variable is smaller than 3. We can calculate this the same way as the calculating the probability of A. The probability of a value being greater than 3 is 1/4 and the probability of a value being less than 3 is 3/4. Given this has to occur three times we multiply the condition three times.
+The probability of event B is that two values must be greater than 3, but one random variable is smaller than 3. We can calculate this the same way as the calculating the probability of A. The probability of a value being greater than 3 is/4 and the probability of a value being less than 3 is/4. Given this has to occur three times we multiply the condition three times.
 
-P(B) = 3 * ((3/4) * (1/4) * (1/4)) = 9/64
+P(B) = 3 * (/4) * /4) * /4)) =/64
 
-Therefore the total probability is P(A)+P(B) = 1/64 + 9/64 = 10/64
+Therefore the total probability is P(A)+P(B) =/64 +/64 = /64
 
 
 * What is the difference between a ROC curve and a precision-recall curve? When should I use each?
@@ -539,7 +540,7 @@ Therefore the total probability is P(A)+P(B) = 1/64 + 9/64 = 10/64
 
 Remember, a ROC curve represents a relation between sensitivity (RECALL) and False Positive Rate (NOT PRECISION). Sensitivity is the other name for recall but the False Positive Rate is not PRECISION.
 
-Recall/Sensitivity is the measure of the probability that your estimate is 1 given all the samples whose true class label is 1. It is a measure of how many of the positive samples have been identified as being positive.
+Reca/Sensitivity is the measure of the probability that your estimate is 1 given all the samples whose true class label is 1. It is a measure of how many of the positive samples have been identified as being positive.
 
 Specificity is the measure of the probability that your estimate is 0 given all the samples whose true class label is 0. It is a measure of how many of the negative samples have been identified as being negative.
 
@@ -561,7 +562,7 @@ So, if your problem involves kind of searching a needle in the haystack when for
 
   
 
-## A/B testing
+##/B testing
   * Setting a metric
   * Setting a threshhold
   * Sample size and Experiment length( rule of thumb two weeks to run the experiment)
@@ -571,6 +572,6 @@ So, if your problem involves kind of searching a needle in the haystack when for
 
 
   #### References
-  * [over 100 data science interview question](https://towardsdatascience.com/over-100-data-scientist-interview-questions-and-answers-c5a66186769a)
-  * [google Interview question](https://www.interviewquery.com/blog-google-data-science-interview-questions-and-solutions/)
-  * [ROC curve and precision recall curve difference](https://www.quora.com/What-is-the-difference-between-a-ROC-curve-and-a-precision-recall-curve-When-should-I-use-each)
+  * [over 100 data science interview question](http//towardsdatascience.c/over-100-data-scientist-interview-questions-and-answers-c5a66186769a)
+  * [google Interview question](http//www.interviewquery.c/blog-google-data-science-interview-questions-and-solutio/)
+  * [ROC curve and precision recall curve difference](http//www.quora.c/What-is-the-difference-between-a-ROC-curve-and-a-precision-recall-curve-When-should-I-use-each)
