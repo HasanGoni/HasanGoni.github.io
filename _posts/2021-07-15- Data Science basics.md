@@ -202,14 +202,14 @@ You could use the Variance Inflation Factors (VIF) to determine if there is any 
 *  A box has 12 red cards and 12 black cards. Another box has 24 red cards and 24 black cards. You want to draw two cards at random from one of the two boxes, one card at a time. Which box has a higher probability of getting cards of the same color and why
   * The box with 24 red cards and 24 black cards has a higher probability of getting two cards of the same color. Let’s walk through each step.
   * For example if we pick first card red from both the box. Then for first box to pick another red is $\frac{11}{(11 + 12)}$, in case of second box the probability is $\frac{23}{23 + 24}$
-  * Since $\\frac{23}{23 + 24} > frac{11}{11 + 12}$ therefore second box has better probability to pick same card.
+  * Since $\frac{23}{23 + 24} > \frac{11}{11 + 12}$ therefore second box has better probability to pick same card.
 
 * You are at a Casino and have two dices to play with. You win $10 every time you roll a 5. If you play till you win and then stop, what is the expected payout?
   * if we think for each game to play we need to spend $5
   * We have 2 dices, which have 36 combination.
   * possibility of adding 5 is 4.
-  * So we have a probability =/frac{4}{36}$ = $\frac{1}{9}$
-  * Theoratically 9 times needs to be play to win a game. 9 times cost $/$ - 9*5\$$ =$-35\$$
+  * So we have a probability =$\frac{4}{36}$ = $\frac{1}{9}$
+  * Theoratically 9 times needs to be play to win a game. 9 times cost $$-9*5\\$  =-35\\$ $$
 
 * How can you tell if a given coin is biased
   * Hypothesis testing
