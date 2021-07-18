@@ -17,7 +17,7 @@ This is the link of all blog posts categorized based on topics. At present it is
 ### 2.Machine Learning Data Lifecycle in Production
 
 * [course 1 week 1](https://hasangoni.github.io/2021/07/19/week1-classnotes.html)
-* [Notebook](https://hasangoni.github.io/2021/07/18/Tensorflow-DataValidation.html)
+  * [Notebook](https://hasangoni.github.io/2021/07/18/Tensorflow-DataValidation.html)
 
 ### Linux server preparation for deployment
 
