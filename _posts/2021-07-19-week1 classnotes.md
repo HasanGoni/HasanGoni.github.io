@@ -636,7 +636,7 @@ Modelling part of the model.
 ### Skew detection workflow
 
 <div>
-<img src='/images/skew_detection_workflow.png'alt='skew_detection_workflow'>
+<img src='/images/skew_detection_workflow.png' alt='skew_detection_workflow'>
 </div>
 
 ## Tensorflow Data Valiadation (TFDV)
