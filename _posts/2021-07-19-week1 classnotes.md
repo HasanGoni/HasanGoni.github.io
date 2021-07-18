@@ -9,7 +9,7 @@
 * In Production ML it is assumed only 5% of the used as a code. Following figure square size may be approximation of ML code
 
 <div>
-<img src='../images/ML_Production_figure.png' alt='ML code fig'>
+<img src='/images/ML_Production_figure.png' alt='ML code fig'>
 </div>
 
 * difference between research ML and Production ML
