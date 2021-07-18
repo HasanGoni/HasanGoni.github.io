@@ -1,4 +1,4 @@
-> This is my class Note of courseara Specialisation of Machine learning in Production. This is the 2nd course of the specialization. This course is divided into four weeks. This is the class notes of week2
+> This is my class Note of courseara Specialisation of Machine learning in Production. This is the 2nd course of the specialization. This course is divided into four weeks. This is the class notes of week1
 
 
 
