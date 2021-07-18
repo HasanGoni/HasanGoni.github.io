@@ -116,13 +116,13 @@ Modelling part of the model.
 * End-to-end platform for deploying production ML pipelines
 
 <div>
-<img src='/images/seq.png'alt='seq'>
+<img src='/images/seq.png' alt='seq'>
 </div>
 
 * This sequence of components are designed for scalable, high-performance machine learning tasks
 
 <div>
-<img src='/images/tfx_c.png'alt='tfx_c'>
+<img src='/images/tfx_c.png' alt='tfx_c'>
 </div>
 
 * TFX is built upon open source libraries like Tensorflow data validation, tensorflow transform
@@ -131,7 +131,7 @@ Modelling part of the model.
 ### TFX Hello World
 
 <div>
-<img src='/images/hello.png'alt='hello'>
+<img src='/images/hello.png' alt='hello'>
 </div>
 
 * ExampleGen
@@ -186,13 +186,13 @@ Modelling part of the model.
 ## Data Pipeline
 
 <div>
-<img src='/images/data_c.png'alt='data_c'>
+<img src='/images/data_c.png' alt='data_c'>
 </div>
 
 ## Data Collection and Monitoring
 
 <div>
-<img src='/images/data_m.png'alt='data_m'>
+<img src='/images/data_m.png' alt='data_m'>
 </div>
 
 ## Key points
@@ -230,7 +230,7 @@ Modelling part of the model.
 * Here is an example of data
 
 <div>
-<img src='/images/ex.png'alt='ex'>
+<img src='/images/ex.png' alt='ex'>
 </div>
 
 * labels are here Fun, how the users rate this 
@@ -298,7 +298,7 @@ Modelling part of the model.
 * Data Security and user Privacy
 * Bias and Fairness (labeling bias removal)
 
-<div> <img src='/images/bias_.png'alt='bias_'> </div>
+<div> <img src='/images/bias_.png' alt='bias_'> </div>
 
 * Open source images, left is pretty correct but on the right it is somewhat incorrect, so it is people but also marriage ceremony, this is classic example of bias in label
 * Normally there are different sources of dataset
@@ -513,7 +513,7 @@ Modelling part of the model.
 * Join the results from monitoring system with inference requests
 
 <div>
-<img src='/images/feed_.png'alt='feed'>
+<img src='/images/feed_.png' alt='feed'>
 </div>
 
 ### Process feedback -advantages
@@ -597,7 +597,7 @@ Modelling part of the model.
 * Normally model decay occurs due to data drift
 
 <div>
-<img src='/images/dex.png'alt='dex'>
+<img src='/images/dex.png' alt='dex'>
 </div>
 
 * Here after software update spammers and non spammers both sending more messages.
@@ -605,7 +605,7 @@ Modelling part of the model.
 * concept drift when there is change in labels
 
 <div>
-<img src='/images/con_.png'alt='con_'>
+<img src='/images/con_.png' alt='con_'>
 </div>
 
 ### Detecting data issues
@@ -630,7 +630,7 @@ Modelling part of the model.
   * y change
 
 <div>
-<img src='/images/dis_skew.png'alt='dis_skew'>
+<img src='/images/dis_skew.png' alt='dis_skew'>
 </div>
 
 ### Skew detection workflow
