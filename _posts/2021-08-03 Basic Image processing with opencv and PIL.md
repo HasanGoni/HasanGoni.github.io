@@ -1,0 +1,714 @@
+# General description
+Here we will see very basic image processing steps using two useful libraries. 
+1. PIL
+2. Opencv
+
+Both libraries provides us very similar functionlity. 
+
+
+# Getting image
+
+
+```python
+!wget https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CV0101EN-SkillsNetwork/images%20/images_part_1/lenna.png -O lenna.png
+!wget https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CV0101EN-SkillsNetwork/images%20/images_part_1/baboon.png -O baboon.png
+!wget https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CV0101EN-SkillsNetwork/images%20/images_part_1/barbara.png -O barbara.png  
+```
+
+    --2021-08-10 19:41:44--  https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CV0101EN-SkillsNetwork/images%20/images_part_1/lenna.png
+    Resolving cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud (cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud)... 169.63.118.104
+    Connecting to cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud (cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud)|169.63.118.104|:443... connected.
+    HTTP request sent, awaiting response... 200 OK
+    Length: 473831 (463K) [image/png]
+    Saving to: 'lenna.png’
+    
+    lenna.png           100%[===================>] 462,73K   859KB/s    in 0,5s    
+    
+    2021-08-10 19:41:47 (859 KB/s) - 'lenna.png’ saved [473831/473831]
+    
+    --2021-08-10 19:41:47--  https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CV0101EN-SkillsNetwork/images%20/images_part_1/baboon.png
+    Resolving cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud (cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud)... 169.63.118.104
+    Connecting to cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud (cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud)|169.63.118.104|:443... connected.
+    HTTP request sent, awaiting response... 200 OK
+    Length: 637192 (622K) [image/png]
+    Saving to: 'baboon.png’
+    
+    baboon.png          100%[===================>] 622,26K   884KB/s    in 0,7s    
+    
+    2021-08-10 19:41:49 (884 KB/s) - 'baboon.png’ saved [637192/637192]
+    
+    --2021-08-10 19:41:49--  https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CV0101EN-SkillsNetwork/images%20/images_part_1/barbara.png
+    Resolving cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud (cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud)... 169.63.118.104
+    Connecting to cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud (cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud)|169.63.118.104|:443... connected.
+    HTTP request sent, awaiting response... 200 OK
+    Length: 185727 (181K) [image/png]
+    Saving to: 'barbara.png’
+    
+    barbara.png         100%[===================>] 181,37K   452KB/s    in 0,4s    
+    
+    2021-08-10 19:41:50 (452 KB/s) - 'barbara.png’ saved [185727/185727]
+    
+
+
+# Image Files and paths
+
+
+```python
+from pathlib import Path
+import matplotlib.pyplot as plt
+Path.ls = lambda x:sorted(list(x.iterdir()))
+```
+
+
+```python
+% matplotlib inline
+% load_ext autoreload
+% autoreload 2
+```
+
+
+
+
+```python
+my_image = 'lenna.png'
+image_path = Path(Path.cwd()/my_image)
+image_path
+
+```
+
+
+
+
+    PosixPath('/home/hasan/Schreibtisch/projects/coursera/computer_vision_basic/lenna.png')
+
+
+
+## PIL image
+
+
+```python
+from PIL import Image
+```
+
+
+```python
+pil_image = Image.open(my_image)
+type(pil_image)
+```
+
+
+
+
+    PIL.PngImagePlugin.PngImageFile
+
+
+
+
+```python
+pil_image
+```
+
+
+
+
+![png](output_9_0.png)
+
+
+
+## OpenCV
+
+
+```python
+import cv2
+```
+
+
+```python
+cv_image = cv2.imread(my_image)
+type(cv_image)
+```
+
+
+
+
+    numpy.ndarray
+
+
+
+* The value of `8bit unsigned Integer`.
+* flag parmaters for `imread` is used to clarify how image should be read. default `cv2.IMREAD_COLOR`
+
+
+```python
+cv_image.shape
+```
+
+
+
+
+    (512, 512, 3)
+
+
+
+
+```python
+cv_image.max(), cv_image.min()
+```
+
+
+
+
+    (255, 3)
+
+
+
+* Normally the intensity value is limited from 0 to 255
+
+* `PIL` image normally return pil array and `opencv` return numpy array. we can actually convert PIL image into numpy array easily. We will do it later.
+* PIL return `R, G, B``format and opencv returns normally `B, G, R` format
+
+# Plotting an image
+
+## PIL image
+
+We can use `ìmage.show` or `matplotlib` function to show an image. When we use `Image.open` it doesnot load the image in computer meemory, to load the image we need to use `image.load` method
+
+
+```python
+pil_image.show()
+```
+
+Now we can do this using matplotlib function
+
+
+```python
+fig, ax = plt.subplots(figsize=(10, 10))
+ax.imshow(pil_image)
+ax.axis('off')
+```
+
+
+
+
+    (-0.5, 511.5, 511.5, -0.5)
+
+
+
+
+![png](output_23_1.png)
+
+
+
+```python
+pil_image.mode
+```
+
+
+
+
+    'RGB'
+
+
+
+
+```python
+pil_image.size
+```
+
+
+
+
+    (512, 512)
+
+
+
+
+```python
+pil_image_ar = pil_image.load()
+type(pil_image_ar)
+```
+
+
+
+
+    PixelAccess
+
+
+
+Now it is loaded in memory, we can now index them as normal array
+
+
+```python
+pil_image_ar[0, 1]
+
+```
+
+
+
+
+    (226, 137, 125)
+
+
+
+Saving can be done using normal save method
+
+
+```python
+# pil_image.save('lena.png')
+```
+
+# Open cv
+
+
+```python
+# cv2.imshow() # can be done, another window will show up , therefore for jupyter notebook, we will be using matplotlib
+```
+
+
+```python
+fig, ax = plt.subplots(figsize=(10, 10))
+ax.imshow(cv_image)
+ax.axis('off')
+```
+
+
+
+
+    (-0.5, 511.5, 511.5, -0.5)
+
+
+
+
+![png](output_33_1.png)
+
+
+As we can see, it is not the image, we are expecting. It is somehow difference, because of channel. As we said earlier opencv uses `B, G, R` format. and we need `R, G, B` image. It is not so difficult to convert it to `R, G, B` image
+
+
+```python
+new_cv_image = cv2.cvtColor(cv_image, cv2.COLOR_BGR2RGB)
+```
+
+Another thing we can do, as we are repeating the matplotlib 3 lines. So we can just create a small fuction to
+
+
+```python
+def show_image(im, cmap=None):
+    """
+    show an image using matplotlib
+    im:image
+    """
+    fig, ax = plt.subplots(figsize=(10, 10))
+    ax.imshow(im,cmap=cmap)
+    ax.axis('off')
+```
+
+
+```python
+show_image(new_cv_image)
+```
+
+
+![png](output_38_0.png)
+
+
+We can actually save the image 
+
+
+```python
+# cv2.imwrite('lenna.jpg', new_cv_imae)
+```
+
+# Grayscale Images
+
+## PIl image
+
+
+```python
+from PIL import ImageOps
+```
+
+
+```python
+pil_image_gray = ImageOps.grayscale(pil_image)
+pil_image_gray
+```
+
+
+
+
+![png](output_44_0.png)
+
+
+
+
+```python
+pil_image_gray.mode
+```
+
+
+
+
+    'L'
+
+
+
+`L` means gray scale image in PIL image library
+
+## Opencv image
+
+
+```python
+cv_gray_image = cv2.cvtColor(new_cv_image, cv2.COLOR_RGB2GRAY)
+# cv_gray_image = cv2.cvtColor(cv_image, cv2.COLOR_BGR2GRAY)
+show_image(cv_gray_image, cmap='gray')
+```
+
+
+![png](output_48_0.png)
+
+
+When loading a gray scale image, we need to change the flag, in case of opencv because default flg is `cv2.IMREAD_COLOR`, in case of gray scale we need to say `cv2.IMREAD_GRAYSCALE`
+
+
+```python
+im_gray = cv2.imread('barbara.png', cv2.IMREAD_GRAYSCALE)
+show_image(im_gray, cmap='gray')
+```
+
+
+![png](output_50_0.png)
+
+
+# Quantization 
+
+* quantization is the number of pixel value, an image can take
+* Normally images value ranges from `0 to 255`
+* We can change them, in pil image there is function called `quantize`
+
+
+
+```python
+pil_image_gray.quantize(256 // 2)
+```
+
+
+
+
+![png](output_53_0.png)
+
+
+
+
+```python
+def get_concat_h(im1,
+                 im2):
+    """
+    two side by side images together
+    """
+    dst = Image.new('RGB', (im1.width  + im2.width, im1.height))
+    dst.paste(im1, (0, 0))
+    dst.paste(im2, (im1.width, 0))
+    return dst
+    
+```
+
+
+```python
+[ 256// 2**i for i in range(3, 8)]
+```
+
+
+
+
+    [32, 16, 8, 4, 2]
+
+
+
+
+```python
+for i in range(3, 8):
+    fig, ax = plt.subplots(figsize=(10, 10))
+    ax.imshow(get_concat_h(pil_image_gray, pil_image_gray.quantize(256 // 2** i)))
+    ax.axis('off')
+    ax.set_title(f' 256 Quantization Levels left vs {256 // 2**i}')
+```
+
+
+![png](output_56_0.png)
+
+
+
+![png](output_56_1.png)
+
+
+
+![png](output_56_2.png)
+
+
+
+![png](output_56_3.png)
+
+
+
+![png](output_56_4.png)
+
+
+So quantization affect we can see the pil image
+
+# Color channel 
+
+## PIL image
+
+
+```python
+red, green, blue = pil_image.split()
+```
+
+
+```python
+get_concat_h(red, blue)
+```
+
+
+
+
+![png](output_61_0.png)
+
+
+
+
+```python
+get_concat_h(red, green)
+```
+
+
+
+
+![png](output_62_0.png)
+
+
+
+
+```python
+def concat_channel(red,
+                   green,
+                   blue):
+    """
+    Args:
+        red ([type]): [description]
+        green ([type]): [description]
+        blue ([type]): [description]
+    """
+    im = Image.new('RGB', (red.width, red.height + green.height + blue.height))
+    im.paste(red,(0,0))
+    im.paste(green,(0,red.height))
+    im.paste(blue,(0,red.height + green.height))
+    return im
+
+```
+
+
+```python
+fig, ax = plt.subplots(nrows=1, ncols=2, figsize=(10, 20))
+axes = ax.ravel()
+axes[0].imshow(pil_image)
+axes[0].axis('off')
+axes[0].set_title('3 Channel image')
+axes[1].imshow(concat_channel(red, green, blue))
+axes[1].axis('off')
+axes[1].set_title('red channel(top), blue channel(bottom)');
+ 
+
+```
+
+
+![png](output_64_0.png)
+
+
+## OpenCV image
+
+Previously we converted open cv imge from bgr to rgb image, so first channel is red, then green and after that blue image
+
+
+
+```python
+red_cv, green_cv, blue_cv = new_cv_image[:, :, 0],  new_cv_image[:, :, 1], new_cv_image[:, :, 2]
+
+
+fig, ax = plt.subplots(nrows=1, ncols=2, figsize=(10, 20))
+axes = ax.ravel()
+axes[0].imshow(new_cv_image)
+axes[0].axis('off')
+axes[0].set_title('3 Channel image Open cv image')
+axes[1].imshow(cv2.vconcat([red_cv, green_cv, blue_cv]), cmap='gray')
+axes[1].axis('off')
+axes[1].set_title('red channel(top), blue channel(bottom)');
+
+```
+
+
+![png](output_67_0.png)
+
+
+## PIL Images to numpy array
+
+
+```python
+import numpy as np
+```
+
+`np.asarray` generally manipualte images, but normally we would like to create a copy of the image and then do whatever we want to do with it. In this case `np.array` will help. In case of np.array it creates a copy of the image.
+
+
+```python
+array = np.array(pil_image)
+array.shape
+```
+
+
+
+
+    (512, 512, 3)
+
+
+
+
+```python
+array.max(), array.min()
+```
+
+
+
+
+    (255, 3)
+
+
+
+
+```python
+array[0, 0]
+```
+
+
+
+
+    array([226, 137, 125], dtype=uint8)
+
+
+
+# Indexing
+
+## PIL image
+
+So here we can tell we want to see upto specific rows of data. and then all columns (means whole image in column axis), and all the channels
+
+
+```python
+row_num = 256
+show_image(array[0:row_num, :, :])
+```
+
+
+![png](output_77_0.png)
+
+
+We can do same for specific columns
+
+
+```python
+column_num = 256
+show_image(array[:, 0: column_num, :])
+```
+
+
+![png](output_79_0.png)
+
+
+> We can reassign another variable to the image using `copy` method
+
+
+```python
+A = array.copy()
+show_image(A)
+```
+
+
+![png](output_81_0.png)
+
+
+> If we do not use `copy` method, the location of memory will be same
+
+
+```python
+B = A
+# We are assigning every value to zero to A image, that means A will be a dark image, but we don't change the B image
+A[:,:,:] = 0
+# let see the B image 
+show_image(B)
+```
+
+
+![png](output_83_0.png)
+
+
+> As we didnot use copy method, therefore same memory location. As a result manipulating A is affecting the B image
+
+We actually can see the each channel image will color, if we want to see the red portion. we need to put the channel iamge to zero
+
+#### Red image
+
+
+
+```python
+
+red_image = array.copy()
+red_image[:,:,1] = 0
+red_image[:,:,2] = 0
+show_image(red_image)
+```
+
+
+![png](output_87_0.png)
+
+
+
+```python
+### Green image
+green_image = array.copy()
+green_image[:, :, 0] = 0
+green_image[:, :, 2] = 0
+show_image(green_image)
+```
+
+
+![png](output_88_0.png)
+
+
+
+```python
+# blue image
+blue_image = array.copy()
+blue_image[:, :, 0] = 0
+blue_image[:, :, 1] = 0
+show_image(blue_image)
+```
+
+
+![png](output_89_0.png)
+
+
+
+```python
+
+```
+
+# References
+
+* Images are taken from [here](https://homepages.cae.wisc.edu/~ece533/images/)
+
+* [PIllow doc](https://pillow.readthedocs.io/en/stable/index.html?utm_medium=Exinfluencer&utm_source=Exinfluencer&utm_content=000026UJ&utm_term=10006555&utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkCV0101ENCoursera25797139-2021-01-01)
+
+* [Opencv doc](https://opencv.org/?utm_medium=Exinfluencer&utm_source=Exinfluencer&utm_content=000026UJ&utm_term=10006555&utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkCV0101ENCoursera25797139-2021-01-01)
+
+* Overall this is the classnote of coursera course [Introduction of Computer Vision and Image Processing](https://www.coursera.org/learn/introduction-computer-vision-watson-opencv/home/welcome)
