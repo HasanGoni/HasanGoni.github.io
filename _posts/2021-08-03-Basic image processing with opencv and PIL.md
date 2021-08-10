@@ -111,7 +111,7 @@ pil_image
 
 
 
-![png](output_9_0.png)
+![](output_9_0.png)
 
 
 
