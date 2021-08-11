@@ -8,7 +8,7 @@ Both libraries provides us very similar functionlity.
 
 # Getting image
 
-
+here I am using jupyter notebook. In jupyter notebook you can use bash command line using `!` sign. In the following line I am telling with `wget` command, that please go to link and save image. After that ``-O`` says that output, that means output link. I have used only name, so the images will be saved in my current directory using the name I have provided after ``-O``
 ```python
 !wget https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CV0101EN-SkillsNetwork/images%20/images_part_1/lenna.png -O lenna.png
 !wget https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CV0101EN-SkillsNetwork/images%20/images_part_1/baboon.png -O baboon.png
@@ -56,6 +56,9 @@ Both libraries provides us very similar functionlity.
 ```python
 from pathlib import Path
 import matplotlib.pyplot as plt
+
+# Function to see all files in a directory.
+# Stolen from fastai. :)
 Path.ls = lambda x:sorted(list(x.iterdir()))
 ```
 
@@ -92,7 +95,9 @@ from PIL import Image
 
 
 ```python
+# Just opening image to see it in jupyter notebook.
 pil_image = Image.open(my_image)
+# At first I want to see the type
 type(pil_image)
 ```
 
@@ -105,13 +110,14 @@ type(pil_image)
 
 
 ```python
+# If we use the name, we can see it in jupyter notebook.Sometimes show method needs to be used. However with magic comman matplotlib inline, it is taken care.
 pil_image
 ```
 
 
 
 
-![](/images//images/images/output_9_0.png)
+![](/images/output_9_0.png)
 
 
 
@@ -119,12 +125,15 @@ pil_image
 
 
 ```python
+# Importing open cv library to use it 
 import cv2
 ```
 
 
 ```python
+# Reading image using opencv
 cv_image = cv2.imread(my_image)
+# Let see the type of the image
 type(cv_image)
 ```
 
@@ -133,7 +142,7 @@ type(cv_image)
 
     numpy.ndarray
 
-
+The type is a numpy array. 
 
 * The value of `8bit unsigned Integer`.
 * flag parmaters for `imread` is used to clarify how image should be read. default `cv2.IMREAD_COLOR`
@@ -162,21 +171,23 @@ cv_image.max(), cv_image.min()
 
 
 
-* Normally the intensity value is limited from 0 to 255
+#### Important information
 
+* Normally the intensity value is limited from 0 to 255
 * `PIL` image normally return pil array and `opencv` return numpy array. we can actually convert PIL image into numpy array easily. We will do it later.
-* PIL return `R, G, B``format and opencv returns normally `B, G, R` format
+* PIL return `R, G, B`format and opencv returns normally `B, G, R` format
 
 # Plotting an image
 
-## PIL image
+## PIL 
 
-We can use `ìmage.show` or `matplotlib` function to show an image. When we use `Image.open` it doesnot load the image in computer meemory, to load the image we need to use `image.load` method
+We can use `image.show` or `matplotlib` function to show an image. When we use `Image.open` it doesnot load the image in computer meemory, to load the image we need to use `image.load` method
 
 
 ```python
 pil_image.show()
 ```
+In jupyter notebook this comman will creat another window with the image. Actually if we want to see the image, we just write the name of the image(in PIL), otherwise we can use matplotlib function, which will be same for both PIL and opencv.
 
 Now we can do this using matplotlib function
 
@@ -195,7 +206,7 @@ ax.axis('off')
 
 
 
-![](images/output_23_1.png)
+![](/images/output_23_1.png)
 
 
 
@@ -250,14 +261,14 @@ pil_image_ar[0, 1]
 
 
 
-Saving can be done using normal save method
+Saving can be done using normal `save` method
 
 
 ```python
 # pil_image.save('lena.png')
 ```
 
-# Open cv
+# Opencv
 
 
 ```python
@@ -316,12 +327,12 @@ We can actually save the image
 
 
 ```python
-# cv2.imwrite('lenna.jpg', new_cv_imae)
+# cv2.imwrite('lenna.jpg', new_cv_image)
 ```
 
 # Grayscale Images
 
-## PIl image
+## PIL
 
 
 ```python
@@ -355,7 +366,7 @@ pil_image_gray.mode
 
 `L` means gray scale image in PIL image library
 
-## Opencv image
+## Opencv 
 
 
 ```python
@@ -380,7 +391,7 @@ show_image(im_gray, cmap='gray')
 ![](/images/output_50_0.png)
 
 
-# Quantization 
+# Quantization PIL
 
 * quantization is the number of pixel value, an image can take
 * Normally images value ranges from `0 to 255`
@@ -458,7 +469,7 @@ So quantization affect we can see the pil image
 
 # Color channel 
 
-## PIL image
+## PIL 
 
 
 ```python
@@ -599,7 +610,7 @@ array[0, 0]
 
 # Indexing
 
-## PIL image
+## PIL
 
 So here we can tell we want to see upto specific rows of data. and then all columns (means whole image in column axis), and all the channels
 
@@ -699,6 +710,7 @@ show_image(blue_image)
 
 
 
+As normally in opencv the images are loaded as numpy array, so same indexing and color images visualization functionality we can use also for opencv laoded image.
 ```python
 
 ```
