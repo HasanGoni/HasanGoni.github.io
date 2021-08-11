@@ -40,7 +40,7 @@ here I am using jupyter notebook. In jupyter notebook you can use bash command l
     --2021-08-10 19:41:49--  https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CV0101EN-SkillsNetwork/images%20/images_part_1/barbara.png
     Resolving cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud (cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud)... 169.63.118.104
     Connecting to cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud (cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud)|169.63.118.104|:443... connected.
-    HTTP request sent, awaiting response... 200 OK
+    HTTy request sent, awaiting response... 200 OK
     Length: 185727 (181K) [image/png]
     Saving to: 'barbara.png’
     
@@ -181,7 +181,7 @@ cv_image.max(), cv_image.min()
 
 ## PIL 
 
-We can use `image.show` or `matplotlib` function to show an image. When we use `Image.open` it doesnot load the image in computer meemory, to load the image we need to use `image.load` method
+We can use `image.show` or `matplotlib` function to show an image. When we use `Image.open` it doesnot load the image in computer memory, to load the image we need to use `image.load` method
 
 
 ```python
@@ -209,7 +209,7 @@ ax.axis('off')
 ![](/images/output_23_1.png)
 
 
-
+We can see the mode of the image
 ```python
 pil_image.mode
 ```
@@ -221,7 +221,7 @@ pil_image.mode
 
 
 
-
+Size of the images can also be seen using ``size``
 ```python
 pil_image.size
 ```
@@ -233,7 +233,7 @@ pil_image.size
 
 
 
-
+As we have said ``Image.open`` doesnot load it in memory. We are loading the image using ``load``
 ```python
 pil_image_ar = pil_image.load()
 type(pil_image_ar)
@@ -300,7 +300,7 @@ As we can see, it is not the image, we are expecting. It is somehow difference, 
 new_cv_image = cv2.cvtColor(cv_image, cv2.COLOR_BGR2RGB)
 ```
 
-Another thing we can do, as we are repeating the matplotlib 3 lines. So we can just create a small fuction to
+Another thing we can do, as we are repeating the matplotlib 3 lines. So we can just create a small fuction to use it in future.
 
 
 ```python
@@ -314,6 +314,7 @@ def show_image(im, cmap=None):
     ax.axis('off')
 ```
 
+Let's see whether our function works or not 
 
 ```python
 show_image(new_cv_image)
@@ -334,6 +335,7 @@ We can actually save the image
 
 ## PIL
 
+We now need anther module from PIL library, which is ``ImageOps`` for our further work
 
 ```python
 from PIL import ImageOps
@@ -368,6 +370,7 @@ pil_image_gray.mode
 
 ## Opencv 
 
+We can use both images, one image was the loaded image or the image we already have converted to rgb first. I guess it is better to use the image, which is saved in locally. However the function name will be changed. I have used both functions ( one is commented out)
 
 ```python
 cv_gray_image = cv2.cvtColor(new_cv_image, cv2.COLOR_RGB2GRAY)
@@ -379,7 +382,7 @@ show_image(cv_gray_image, cmap='gray')
 ![](/images/output_48_0.png)
 
 
-When loading a gray scale image, we need to change the flag, in case of opencv because default flg is `cv2.IMREAD_COLOR`, in case of gray scale we need to say `cv2.IMREAD_GRAYSCALE`
+When loading a gray scale image, we need to change the flag, in case of opencv because default flg is `cv2.IMREAD_COLOR`, in case of gray scale we need to use `cv2.IMREAD_GRAYSCALE` flag
 
 
 ```python
@@ -409,7 +412,7 @@ pil_image_gray.quantize(256 // 2)
 ![](/images/output_53_0.png)
 
 
-
+I want to see main image and quanized image side, therefore creating another function to see the effect clearly
 
 ```python
 def get_concat_h(im1,
@@ -465,19 +468,24 @@ for i in range(3, 8):
 ![](/images/output_56_4.png)
 
 
-So quantization affect we can see the pil image
+So quantization affect we can see the in pil image. We can do it opencv image manually.
 
 # Color channel 
 
 ## PIL 
 
+We can individually see each channel image using ``split`` funciton
 
 ```python
 red, green, blue = pil_image.split()
 ```
 
+Now we have the varialbe (red, green, blue) which have the image of each channel separately.
 
+
+Let's see each channel side by side to compare it 
 ```python
+
 get_concat_h(red, blue)
 ```
 
@@ -501,6 +509,8 @@ get_concat_h(red, green)
 
 
 
+Actually it is better when we can see the color image and all channel image together. So following function will help us in this manner.
+
 ```python
 def concat_channel(red,
                    green,
@@ -519,6 +529,7 @@ def concat_channel(red,
 
 ```
 
+Let's see whether our function works or not
 
 ```python
 fig, ax = plt.subplots(nrows=1, ncols=2, figsize=(10, 20))
@@ -537,8 +548,9 @@ axes[1].set_title('red channel(top), blue channel(bottom)');
 ![](/images/output_64_0.png)
 
 
-## OpenCV image
+## Opencv
 
+So we can do same thing with open cv image
 Previously we converted open cv imge from bgr to rgb image, so first channel is red, then green and after that blue image
 
 
@@ -710,7 +722,7 @@ show_image(blue_image)
 
 
 
-As normally in opencv the images are loaded as numpy array, so same indexing and color images visualization functionality we can use also for opencv laoded image.
+As normally in opencv the images are loaded as numpy array, so same indexing and color images visualization functionality we can use also for opencv images.
 ```python
 
 ```
