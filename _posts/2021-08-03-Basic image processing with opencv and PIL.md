@@ -1,4 +1,4 @@
-# General description
+# Basic Image processing using PIL and Opencv
 Here we will see very basic image processing steps using two useful libraries. 
 1. PIL
 2. Opencv
