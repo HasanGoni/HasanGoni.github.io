@@ -79,7 +79,7 @@ display(Image('cat.png'))
 ```
 
 
-![](/images/Image Manipulating_7_0.png)
+![](/images/Image_Manipulating_7_0.png)
 
 
 ## 1. Flipping Image:PIL
@@ -108,7 +108,7 @@ show_image(pil_image)
 ```
 
 
-![](/images/Image Manipulating_12_0.png)
+![](/images/Image_Manipulating_12_0.png)
 
 
 As we have seen in last post, we can convert the pil image to numpy image, and do some manipulation
@@ -145,7 +145,7 @@ show_image(flipped_array)
 ```
 
 
-![](/images/Image Manipulating_18_0.png)
+![](/images/Image_Manipulating_18_0.png)
 
 
 Now we can flip the image using numpy array indexing
@@ -164,7 +164,7 @@ show_image(flipped_array)
 ```
 
 
-![](/images/Image Manipulating_22_0.png)
+![](/images/Image_Manipulating_22_0.png)
 
 
 Although we can actully use PIL libray and `ImageOps.flip()` function. Let's use this functiona and visualize it
@@ -177,7 +177,7 @@ show_image(flipped_image_pil)
 ```
 
 
-![](/images/Image Manipulating_24_0.png)
+![](/images/Image_Manipulating_24_0.png)
 
 
 There are several function available in `ImageOps`, we can create a mirror image using `ImageOps.mirror`
@@ -189,7 +189,7 @@ show_image(mirror_image)
 ```
 
 
-![](/images/Image Manipulating_26_0.png)
+![](/images/Image_Manipulating_26_0.png)
 
 
 `transpose` method can also be used, but there needs some integer, which tells what type of transpose will be used. In case of 1 we can flip the image
@@ -202,7 +202,7 @@ show_image(im_flip)
 ```
 
 
-![](/images/Image Manipulating_28_0.png)
+![](/images/Image_Manipulating_28_0.png)
 
 
 The Image module has some built in attributes that describes the type fo flip. Some are followings
@@ -249,31 +249,31 @@ for i, (k,v) in enumerate(flip.items()):
 ```
 
 
-![](/images/Image Manipulating_33_0.png)
+![](/images/Image_Manipulating_33_0.png)
 
 
 
-![](/images/Image Manipulating_33_1.png)
+![](/images/Image_Manipulating_33_1.png)
 
 
 
-![](/images/Image Manipulating_33_2.png)
+![](/images/Image_Manipulating_33_2.png)
 
 
 
-![](/images/Image Manipulating_33_3.png)
+![](/images/Image_Manipulating_33_3.png)
 
 
 
-![](/images/Image Manipulating_33_4.png)
+![](/images/Image_Manipulating_33_4.png)
 
 
 
-![](/images/Image Manipulating_33_5.png)
+![](/images/Image_Manipulating_33_5.png)
 
 
 
-![](/images/Image Manipulating_33_6.png)
+![](/images/Image_Manipulating_33_6.png)
 
 
 ## Flipping Image:Opencv
@@ -290,7 +290,7 @@ show_image(cv2.cvtColor(cv_image, cv2.COLOR_BGR2RGB))
 ```
 
 
-![](/images/Image Manipulating_36_0.svg)
+![](/images/Image_Manipulating_36_0.svg)
 
 
 again like pil image we can use shape, here it is already numpy array, therefore we don't need to convert to numpy
@@ -317,15 +317,15 @@ for flipcode in [0, 1, -1]:
 ```
 
 
-![](/images/Image Manipulating_40_0.svg)
+![](/images/Image_Manipulating_40_0.svg)
 
 
 
-![](/images/Image Manipulating_40_1.svg)
+![](/images/Image_Manipulating_40_1.svg)
 
 
 
-![](/images/Image Manipulating_40_2.svg)
+![](/images/Image_Manipulating_40_2.svg)
 
 
 Another method we can use is the `rotate()` method, an integer will be used to assign the degree of rotation
@@ -370,7 +370,7 @@ side_by_side(im1=cv2.cvtColor(cv_image, cv2.COLOR_BGR2RGB),
 ```
 
 
-![](/images/Image Manipulating_45_0.svg)
+![](/images/Image_Manipulating_45_0.svg)
 
 
 like `PIL`, `Opencv` has also some built in rotation method which is acutally integer and this integer will tell the rotation
@@ -404,15 +404,15 @@ for k, v in flip_cv.items():
 ```
 
 
-![](/images/Image Manipulating_49_0.svg)
+![](/images/Image_Manipulating_49_0.svg)
 
 
 
-![](/images/Image Manipulating_49_1.svg)
+![](/images/Image_Manipulating_49_1.svg)
 
 
 
-![](/images/Image Manipulating_49_2.svg)
+![](/images/Image_Manipulating_49_2.svg)
 
 
 ## Cropping Image: PIL
@@ -431,7 +431,7 @@ side_by_side(numpy_array,
 ```
 
 
-![](/images/Image Manipulating_53_0.svg)
+![](/images/Image_Manipulating_53_0.svg)
 
 
 In case of `horizontal` cropping we need to select all columns, but only some of the rows. So the indexing will be `[row_1:row_2,:,:]` 
@@ -446,7 +446,7 @@ side_by_side(numpy_array,
 ```
 
 
-![](/images/Image Manipulating_55_0.svg)
+![](/images/Image_Manipulating_55_0.svg)
 
 
 Actually `PIL` has its own `crop()` function, where the cropping area will be selected like
@@ -464,7 +464,7 @@ side_by_side(im1=pil_image,
 ```
 
 
-![](/images/Image Manipulating_57_0.svg)
+![](/images/Image_Manipulating_57_0.svg)
 
 
 After that if we want we can flip the image, if necessary
@@ -478,7 +478,7 @@ side_by_side(im1=pil_image_crop,
 ```
 
 
-![](/images/Image Manipulating_59_0.svg)
+![](/images/Image_Manipulating_59_0.svg)
 
 
 ## Cropping Image:Opencv
@@ -500,7 +500,7 @@ side_by_side(cv_image_new,
 ```
 
 
-![](/images/Image Manipulating_63_0.svg)
+![](/images/Image_Manipulating_63_0.svg)
 
 
 
@@ -513,7 +513,7 @@ side_by_side(cv_image_new,
 ```
 
 
-![](/images/Image Manipulating_64_0.svg)
+![](/images/Image_Manipulating_64_0.svg)
 
 
 ## Changing Specific Image Pixels: PIL
@@ -531,7 +531,7 @@ side_by_side(numpy_array, numpy_rec, 'original image',
 ```
 
 
-![](/images/Image Manipulating_68_0.svg)
+![](/images/Image_Manipulating_68_0.svg)
 
 
 
@@ -545,7 +545,7 @@ side_by_side(numpy_array,
 ```
 
 
-![](/images/Image Manipulating_69_0.svg)
+![](/images/Image_Manipulating_69_0.svg)
 
 
 To draw a box we actually can use `ImageDraw` of `PIL` library. 
@@ -556,7 +556,7 @@ show_image(pil_image)
 ```
 
 
-![](/images/Image Manipulating_71_0.png)
+![](/images/Image_Manipulating_71_0.png)
 
 
 
@@ -582,7 +582,7 @@ show_image(image_draw)
 ```
 
 
-![](/images/Image Manipulating_74_0.png)
+![](/images/Image_Manipulating_74_0.png)
 
 
 
@@ -592,7 +592,7 @@ show_image(image_draw)
 ```
 
 
-![](/images/Image Manipulating_75_0.png)
+![](/images/Image_Manipulating_75_0.png)
 
 
 
@@ -603,7 +603,7 @@ show_image(image_draw)
 ```
 
 
-![](/images/Image Manipulating_76_0.png)
+![](/images/Image_Manipulating_76_0.png)
 
 
 
@@ -614,7 +614,7 @@ show_image(image_draw)
 ```
 
 
-![](/images/Image Manipulating_77_0.png)
+![](/images/Image_Manipulating_77_0.png)
 
 
 We can actully cut one image and paste it to another iamge
@@ -628,7 +628,7 @@ show_image(numpy_array_lena)
 ```
 
 
-![](/images/Image Manipulating_79_0.svg)
+![](/images/Image_Manipulating_79_0.svg)
 
 
 In PIL there is a method, where we actually don't need array indexing. We actually can directly call `paste()` method from PIL library.
@@ -639,7 +639,7 @@ show_image(pil_image_crop)
 ```
 
 
-![](/images/Image Manipulating_81_0.svg)
+![](/images/Image_Manipulating_81_0.svg)
 
 
 
@@ -653,7 +653,7 @@ show_image(pil_image_lena)
 ```
 
 
-![](/images/Image Manipulating_83_0.svg)
+![](/images/Image_Manipulating_83_0.svg)
 
 
 ## Changing Specific Image Pixels: Opencv
@@ -672,7 +672,7 @@ side_by_side(new_cv_image, cv_square_image,'actual image', 'cropped altered imag
 ```
 
 
-![](/images/Image Manipulating_86_0.svg)
+![](/images/Image_Manipulating_86_0.svg)
 
 
 We can draw different shape like PIL image. Here we wil create a box which type of box we actually see in object detection.
@@ -690,7 +690,7 @@ side_by_side(new_cv_image,
 ```
 
 
-![](/images/Image Manipulating_88_0.svg)
+![](/images/Image_Manipulating_88_0.svg)
 
 
 Like PIL we can put text in opencv image.
@@ -716,7 +716,7 @@ show_image(text_image)
 ```
 
 
-![](/images/Image Manipulating_90_0.svg)
+![](/images/Image_Manipulating_90_0.svg)
 
 
 References:
