@@ -1,3 +1,3 @@
-# Your blog
+# This a repository for writing blog using fastblog
 
-This is the repository for your blog! Click *_config.yml* above to get started and fill in the details. Then click *index.md* and edit it to start creating your home page.
+This is the repository for the blog!  *_config.yml* is responsible for the user information. And then  *index.md* is the indexed blog list
