@@ -117,7 +117,7 @@ pil_image
 
 
 
-![](/images/output_9_0.png)
+![](/images/Image_processing_9_0.png)
 
 
 
@@ -206,7 +206,7 @@ ax.axis('off')
 
 
 
-![](/images/output_23_1.png)
+![](/images/Image_processing_23_1.png)
 
 
 We can see the mode of the image
@@ -290,7 +290,7 @@ ax.axis('off')
 
 
 
-![](/images/output_33_1.png)
+![](/images/Image_processing_33_1.png)
 
 
 As we can see, it is not the image, we are expecting. It is somehow difference, because of channel. As we said earlier opencv uses `B, G, R` format. and we need `R, G, B` image. It is not so difficult to convert it to `R, G, B` image
@@ -321,7 +321,7 @@ show_image(new_cv_image)
 ```
 
 
-![](/images/output_38_0.png)
+![](/images/Image_processing_38_0.png)
 
 
 We can actually save the image 
@@ -350,7 +350,7 @@ pil_image_gray
 
 
 
-![](/images/output_44_0.png)
+![](/images/Image_processing_44_0.png)
 
 
 
@@ -379,7 +379,7 @@ show_image(cv_gray_image, cmap='gray')
 ```
 
 
-![](/images/output_48_0.png)
+![](/images/Image_processing_48_0.png)
 
 
 When loading a gray scale image, we need to change the flag, in case of opencv because default flg is `cv2.IMREAD_COLOR`, in case of gray scale we need to use `cv2.IMREAD_GRAYSCALE` flag
@@ -391,7 +391,7 @@ show_image(im_gray, cmap='gray')
 ```
 
 
-![](/images/output_50_0.png)
+![](/images/Image_processing_50_0.png)
 
 
 # Quantization PIL
@@ -409,7 +409,7 @@ pil_image_gray.quantize(256 // 2)
 
 
 
-![](/images/output_53_0.png)
+![](/images/Image_processing_53_0.png)
 
 
 I want to see main image and quanized image side, therefore creating another function to see the effect clearly
@@ -449,23 +449,23 @@ for i in range(3, 8):
 ```
 
 
-![](/images/output_56_0.png)
+![](/images/Image_processing_56_0.png)
 
 
 
-![](/images/output_56_1.png)
+![](/images/Image_processing_56_1.png)
 
 
 
-![](/images/output_56_2.png)
+![](/images/Image_processing_56_2.png)
 
 
 
-![](/images/output_56_3.png)
+![](/images/Image_processing_56_3.png)
 
 
 
-![](/images/output_56_4.png)
+![](/images/Image_processing_56_4.png)
 
 
 So quantization affect we can see the in pil image. We can do it opencv image manually.
@@ -492,7 +492,7 @@ get_concat_h(red, blue)
 
 
 
-![](/images/output_61_0.png)
+![](/images/Image_processing_61_0.png)
 
 
 
@@ -504,7 +504,7 @@ get_concat_h(red, green)
 
 
 
-![](/images/output_62_0.png)
+![](/images/Image_processing_62_0.png)
 
 
 
@@ -545,7 +545,7 @@ axes[1].set_title('red channel(top), blue channel(bottom)');
 ```
 
 
-![](/images/output_64_0.png)
+![](/images/Image_processing_64_0.png)
 
 
 ## Opencv
@@ -571,7 +571,7 @@ axes[1].set_title('red channel(top), blue channel(bottom)');
 ```
 
 
-![](/images/output_67_0.png)
+![](/images/Image_processing_67_0.png)
 
 
 ## PIL Images to numpy array
@@ -633,7 +633,7 @@ show_image(array[0:row_num, :, :])
 ```
 
 
-![](/images/output_77_0.png)
+![](/images/Image_processing_77_0.png)
 
 
 We can do same for specific columns
@@ -645,7 +645,7 @@ show_image(array[:, 0: column_num, :])
 ```
 
 
-![](/images/output_79_0.png)
+![](/images/Image_processing_79_0.png)
 
 
 > We can reassign another variable to the image using `copy` method
@@ -657,7 +657,7 @@ show_image(A)
 ```
 
 
-![](/images/output_81_0.png)
+![](/images/Image_processing_81_0.png)
 
 
 > If we do not use `copy` method, the location of memory will be same
@@ -672,7 +672,7 @@ show_image(B)
 ```
 
 
-![](/images/output_83_0.png)
+![](/images/Image_processing_83_0.png)
 
 
 > As we didnot use copy method, therefore same memory location. As a result manipulating A is affecting the B image
@@ -692,7 +692,7 @@ show_image(red_image)
 ```
 
 
-![](/images/output_87_0.png)
+![](/images/Image_processing_87_0.png)
 
 
 
@@ -705,7 +705,7 @@ show_image(green_image)
 ```
 
 
-![](/images/output_88_0.png)
+![](/images/Image_processing_88_0.png)
 
 
 
@@ -718,7 +718,7 @@ show_image(blue_image)
 ```
 
 
-![](/output_89_0.png)
+![](/Image_processing_89_0.png)
 
 
 

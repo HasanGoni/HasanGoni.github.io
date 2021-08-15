@@ -1,4 +1,4 @@
-# Basic Image Processing using PIL and opencv
+# Basic Image Manipulating using PIL and opencv
 
 * In last [post](https://hasangoni.github.io/2021/08/03/Basic-image-processing-with-opencv-and-PIL.html) we have just seen some of basic image processing techniques. Here we will try to see some manipulation of the image using both of the libraries.
 * With basic python(here I meant anaconda installtion) library we need pillow. One can see basic installation guide from the [website](https://pillow.readthedocs.io/en/stable/installation.html)
