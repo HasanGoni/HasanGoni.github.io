@@ -707,3 +707,9 @@ show_image_list([cameraman_cv, outs, outs1],
 * cv2.THRESH_BINARY_INV is used to invert the binarasation, means (0 back o to 255 white)
 
 
+
+References:
+* This whole notebook is actually combination of two notebooks, which is my class note of coursera course. [Basic compuer vision ](https://www.coursera.org/learn/introduction-computer-vision-watson-opencv/home/welcome)
+*   <a href='https://pillow.readthedocs.io/en/stable/index.html?utm_medium=Exinfluencer&utm_source=Exinfluencer&utm_content=000026UJ&utm_term=10006555&utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkCV0101ENCoursera25797139-2021-01-01'>Pillow Docs</a>
+
+*  <a href='https://opencv.org/?utm_medium=Exinfluencer&utm_source=Exinfluencer&utm_content=000026UJ&utm_term=10006555&utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkCV0101ENCoursera25797139-2021-01-01'>Open CV</a>

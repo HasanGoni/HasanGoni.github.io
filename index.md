@@ -7,6 +7,8 @@ This is the link of all blog posts categorized based on topics. At present it is
 * [Image loading using PIL and opencv](https://hasangoni.github.io/2021/08/03/Basic-image-processing-with-opencv-and-PIL.html)
 * [Image Manipulating using PIL and opencv](https://hasangoni.github.io/2021/08/13/Image-Manipulating-Using-PIL-and-opencv.html)
 
+* [Spatial filtering](https://hasangoni.github.io/2021/09/05/Spatial_filtering_using_PIL_Opencv.html)
+
 ### Object Detection
 
 * [Covid Mask detection](https://hasangoni.github.io/2021/05/14/Covid_mastk_object_detection.html)
