@@ -1,4 +1,4 @@
-# Apex installation Problem
+# Apex installation problem
 
 * Apex github site says, At first clone the github repository.
 * cd apex
@@ -36,4 +36,4 @@ With this problem has been solved
 ## Summary
 
 * Need compatible pytorch version and cuda toolkit, for apex installation
-* after that follow pip installation apex from git repo
+* After that follow pip installation apex from git repo
