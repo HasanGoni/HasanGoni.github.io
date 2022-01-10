@@ -46,3 +46,6 @@ This is the link of all blog posts categorized based on topics. At present it is
 
 * [Command line basics](https://hasangoni.github.io/2021/07/08/Command-Line-Basics.html)
 * [Fixing mistake and bad comments](https://hasangoni.github.io/2021/07/08/Fixing-Mistakes-And-Bad-Comments.html)
+## Problems 
+
+* [Apex_installation](https://hasangoni.github.io/2022/01/10/apex_installation_problem.html
