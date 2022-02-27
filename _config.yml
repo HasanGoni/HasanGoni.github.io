@@ -9,14 +9,17 @@
 title: Hasan's Post
 description: Tutorial repository
 github_username: HasanGoni
-linkedin_username: mohammed-hasan-goni
 
 # Email and twitter are optional:
 email: hasanmme1412@gmail.com
 twitter_username: hasangoni
 
+linkedin_username: mohammed-hasan-goni-77614a89
+
 # Set this to true to get LaTeX math equation support
 use_math: true
+show_image: true
+comments: true
 
 # Add your Google Analytics ID here if you have one and want to use it
 google_analytics:
