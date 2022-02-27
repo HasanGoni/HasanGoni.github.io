@@ -11,8 +11,8 @@ description: This is the blog post
 github_username: HasanGoni
 
 # Email and twitter are optional:
-email:
-twitter_username:
+email: hasanmme1412@gmail.com
+twitter_username: hasangoni
 
 # Set this to true to get LaTeX math equation support
 use_math: true

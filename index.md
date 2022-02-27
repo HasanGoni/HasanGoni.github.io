@@ -9,6 +9,8 @@ This is the link of all blog posts categorized based on topics. At present it is
        * [Using Containers](https://hasangoni.github.io/2021/09/23/week2.html)
        * [Managing Containers](https://hasangoni.github.io/2021/09/23/week3.html)
        * [Kubernetes](https://hasangoni.github.io/2021/09/23/week4.html)
+      
+   * [Deploying and scaling app with kubernetes introduction](https://hasangoni.github.io/2022/02/27/model_deploying_scaling_with_kubernetes.html)
      
 ## Computer vision
 
