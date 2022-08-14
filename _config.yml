@@ -25,12 +25,13 @@ comments: true
 google_analytics:
 
 # Everything below here can be ignored, unless you want to change the theme entirely
-theme: minima
+theme: pages_themes/hacker
 plugins:
   - jekyll-feed
   - jekyll-gist
   - jekyll-octicons
   - jekyll-github-metadata
+  - jekyll-remote-theme
 
 titles_from_headings:
   enabled:     true
