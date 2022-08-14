@@ -25,7 +25,7 @@ comments: true
 google_analytics:
 
 # Everything below here can be ignored, unless you want to change the theme entirely
-theme: pages_themes/hacker
+remote_theme: pages-themes/hacker
 plugins:
   - jekyll-feed
   - jekyll-gist
