@@ -1,5 +1,7 @@
 # Nbdev worker round video tutorial
 
+-author: Hasan
+
 * This is the summary of [this](https://www.youtube.com/watch?v=67FdzLSt4aA&ab_channel=JeremyHoward)video.
 
 ## Create a repo in Github
