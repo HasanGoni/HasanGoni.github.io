@@ -1,5 +1,5 @@
 # Create docker image from docker file, run it and push to ibm registry 
-author: hasan goni
+
 ## Introductory work and hello-world running
 * First check the docker cli is installed 
   * that can be done by following command `docker --version`
