@@ -1,4 +1,4 @@
-# Introduciton
+# Explanatory Data Analysis
 
 * This is a summary of the course [How to win a data science competition: Learn from top Kagglers](https://www.coursera.org/learn/competitive-data-science). The course is available on coursera. The course is taught by Yandex and MIPT. This is my note taken from that course.
 
