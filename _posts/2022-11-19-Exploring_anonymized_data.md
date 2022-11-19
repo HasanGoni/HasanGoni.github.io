@@ -1,6 +1,6 @@
-# Introduction
+# EDA on Anonymized Data
 
-* This is third part of the series. [First](hasangoni.github.io/2022/11/19/Explanatory_data_analysis.html) and [second](hasangoni.github.io/2022/11/19/Feature_preprocessing_and_generation) part needs to be read for better understanding. In this part description can be found, when we have anonymized data and how to explore it.
+* This is third part of the series. [First](https://Hasangoni.github.io/2022/11/19/Explanatory_data_analysis.html) and [second](https://Hasangoni.github.io/2022/11/19/Feature_preprocessing_and_generation) part needs to be read for better understanding. In this part description can be found, when we have anonymized data and how to explore it.
 
 # Anonymized data
 
@@ -177,3 +177,5 @@ df.mean().sort_values().plot(style='.')
  ![ordered_feature_mean](images/sort_feature_mean.png)
 
  * Now we can have close look to each group and use imagination to create new features.
+
+ * Next post is [here](https://Hasangoni.github.io/2022/11/19/Feature_extraction_from_text.html)

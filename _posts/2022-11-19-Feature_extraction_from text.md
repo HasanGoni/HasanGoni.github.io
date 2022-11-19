@@ -1,8 +1,6 @@
-# Intrduction
+# EDA on Text data
 
-* This is a part of series. Previous part can be found [here](hasangoni.github.io/2022/11/19/Exploring_anonymized_data.html).In this part I try to write down about text data
-
-
+* This is a part of series. Previous part can be found [here](https://Hasangoni.github.io/2022/11/19/Exploring_anonymized_data.html).In this part I try to write down about text data
 # Feature extraction from text
 
 1. Bag of words

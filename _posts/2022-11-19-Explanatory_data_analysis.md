@@ -4,10 +4,10 @@
 
 * As the summary seems a little bit long. So I tried to convert it different parts. This is introduction part. In this part I will try to explain what is EDA and how should one proceed with EDA in a project.
 
-  * [Feature preprocessing and generation](2022/11/19/Feature_preprocessing_and_generation.html)
-  * [Exploring anonymized data](2022/11/19/Exploring_anonymized_data.html)
-  * [Feature extraction from text](2022/11/19/Feature_extraction_from_text.html)
-  * [Feature extraction from images](2022/11/19/Feature_extraction_images.html)
+  * [Feature preprocessing and generation](https://Hasangoni.github.io/2022/11/19/Feature_preprocessing_and_generation.html)
+  * [Exploring anonymized data](https://Hasangoni.github.io/2022/11/19/Exploring_anonymized_data.html)
+  * [Feature extraction from text](https://Hasangoni.github.io/2022/11/19/Feature_extraction_from_text.html)
+  * [Feature extraction from images](https://Hasangoni.github.io/2022/11/19/Feature_extraction_images.html)
 
 # Explantory data analysis
 
@@ -71,3 +71,4 @@
 * Validation scheme can only ge genreated if we understand how data is generated 
 * If theere is a diffrence between train and test, then we need to check it, try to understand why it is done and whether to gain any intuition about it. 
 
+* Next post is found [here](https://Hasangoni.github.io/2022/11/19/Feature_preprocessing_and_generation.html)
