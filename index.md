@@ -4,7 +4,7 @@ This is the link of all blog posts categorized based on topics. At present it is
 
 ## Data Science steps to follow
 
-* [Exploratory Data Analysis](https://Hasangoni.github.io/2022/11/19/Explantory_data_analysis.html)
+* [Exploratory Data Analysis](https://Hasangoni.github.io/2022/11/19/Explanatory_data_analysis.html)
 
   * [Feature preprocessing and generation](https://Hasangoni.github.io/2022/11/19/Feature_preprocessing_and_generation.html)
   * [Exploring anonymized data](https://Hasangoni.github.io/2022/11/19/Exploring_anonymized_data.html)
