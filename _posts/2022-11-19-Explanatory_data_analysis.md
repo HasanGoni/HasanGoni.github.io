@@ -4,10 +4,10 @@
 
 * As the summary seems a little bit long. So I tried to convert it different parts. This is introduction part. In this part I will try to explain what is EDA and how should one proceed with EDA in a project.
 
-  * [Feature preprocessing and generation](hasangoni.github.io/2022/11/19/Feature_preprocessing_and_generation.html)
-  * [Exploring anonymized data](hasangoni.github.io/2022/11/19/Exploring_anonymized_data.html)
-  * [Feature extraction from text](hasangoni.github.io/2022/11/19/Feature_extraction_from_text.html)
-  * [Feature extraction from images](hasangoni.github.io/2022/11/19/Feature_extraction_images.html)
+  * [Feature preprocessing and generation](2022/11/19/Feature_preprocessing_and_generation.html)
+  * [Exploring anonymized data](2022/11/19/Exploring_anonymized_data.html)
+  * [Feature extraction from text](2022/11/19/Feature_extraction_from_text.html)
+  * [Feature extraction from images](2022/11/19/Feature_extraction_images.html)
 
 # Explantory data analysis
 
