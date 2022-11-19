@@ -71,4 +71,4 @@
 * Validation scheme can only ge genreated if we understand how data is generated 
 * If theere is a diffrence between train and test, then we need to check it, try to understand why it is done and whether to gain any intuition about it. 
 
-* Next post is found [here](https://Hasangoni.github.io/2022/11/19/Feature_preprocessing_and_generation.html)
+__Next post can be found [here](https://Hasangoni.github.io/2022/11/19/Feature_preprocessing_and_generation.html)__

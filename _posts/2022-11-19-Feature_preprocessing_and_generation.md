@@ -1,6 +1,6 @@
 # Feature Preprocessing and Generation
 
-* This is a second part of the class note of how to proceed to a data science project. First part can be found [here](hasangoni.github.io/2022/11/19/Explanatory_data_analysis.html).In this part I will try to write down, how prprocessing steps vary based on model selection. What type of preprocessing needs to be done on different types of data and how to handle missing values in a project.
+* This is a second part of the class note of how to proceed to a data science project. First part can be found [here](https://Hasangoni.github.io/2022/11/19/Explanatory_data_analysis.html). In this part I will try to write down, how prprocessing steps vary based on model selection. What type of preprocessing needs to be done on different types of data and how to handle missing values in a project.
 
 # Employed model impacts choice of preprocessing
 
@@ -239,8 +239,5 @@
 * avoid missing values during feature generation
 * XGBoost can handle missing values
 
-# Outline and pipeline of applying Bag of words
 
-# Compare Bag of words and Word2Vec
-
-# Extract CNN Descriptions from images
+ __Next post can be found [here] (https://Hasangoni.github.io/2022/11/19/Exploring_anonymized_data.html)__

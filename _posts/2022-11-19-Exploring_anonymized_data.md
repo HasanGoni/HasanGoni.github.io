@@ -178,4 +178,4 @@ df.mean().sort_values().plot(style='.')
 
  * Now we can have close look to each group and use imagination to create new features.
 
- * Next post is [here](https://Hasangoni.github.io/2022/11/19/Feature_extraction_from_text.html)
+__Next post can be found [here](https://Hasangoni.github.io/2022/11/19/Feature_extraction_from_text.html)__
