@@ -240,4 +240,4 @@
 * XGBoost can handle missing values
 
 
- __Next post can be found [here] (https://Hasangoni.github.io/2022/11/19/Exploring_anonymized_data.html)__
+ __Next post can be found [here](https://Hasangoni.github.io/2022/11/19/Exploring_anonymized_data.html)__
