@@ -1,6 +1,6 @@
 # Introduction
 
-* This is third part of the series. First and second part needs to be read for better understanding. In this part description can be found, when we have anonymized data and how to explore it.
+* This is third part of the series. [First](hasangoni.github.io/2022/11/19/Explanatory_data_analysis.html) and [second](hasangoni.github.io/2022/11/19/Feature_preprocessing_and_generation) part needs to be read for better understanding. In this part description can be found, when we have anonymized data and how to explore it.
 
 # Anonymized data
 

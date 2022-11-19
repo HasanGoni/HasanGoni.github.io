@@ -1,6 +1,6 @@
 # Introduction
 
-* This is a part of the series, In this part I will try to write about EDA, when the data is image type
+* This is a part of the series, Prvious part is [here](hasangoni.github.io/2022/11/19/Feature_extraction_from_text.html). In this part I will try to write about EDA, when the data is image type
 
 # Images Vector extraction
 
