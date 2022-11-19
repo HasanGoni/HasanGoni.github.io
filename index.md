@@ -4,14 +4,15 @@ This is the link of all blog posts categorized based on topics. At present it is
 
 ## Data Science steps to follow
 
-* [Exploratory Data Analysis](https://Hasangoni.github.io/2022/11/19/Explanatory_data_analysis.html)
+* [Explanatory Data Analysis](https://Hasangoni.github.io/2022/11/19/Explanatory_data_analysis.html)
 
-  * [Feature preprocessing and generation](https://Hasangoni.github.io/2022/11/19/Feature_preprocessing_and_generation.html)
-  * [Exploring anonymized data](https://Hasangoni.github.io/2022/11/19/Exploring_anonymized_data.html)
-  * [Feature extraction from text](https://Hasangoni.github.io/2022/11/19/Feature_extraction_from_text.html)
-  * [Feature extraction from images](https://Hasangoni.github.io/2022/11/19/Feature_extraction_images.html)
+  * [Feature Preprocessing and Generation](https://Hasangoni.github.io/2022/11/19/Feature_preprocessing_and_generation.html)
 
+  * [Exploring Anonymized Data](https://Hasangoni.github.io/2022/11/19/Exploring_anonymized_data.html)
 
+  * [Feature Extraction From Text](https://Hasangoni.github.io/2022/11/19/Feature_extraction_from_text.html)
+
+  * [Feature Extraction From Images](https://Hasangoni.github.io/2022/11/19/Feature_extraction_images.html)
 
 
 ## Cloud Computing
