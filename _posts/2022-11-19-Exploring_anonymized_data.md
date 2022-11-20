@@ -82,7 +82,7 @@
 * Sometimes in histogram you will see some spikes. It could be anything. Actually in particular case the organizer put the missing vlaue with its mean. We can change this value with other than mean.
 * we can also plot x is index and y is feature value. Not conenct with line but with circles only. ```python plt.plot(x,'.' )```
 
-    ![index_image](images/index_vs_feature.png)
+    ![index_image](//images/how_to_win/how_to_win/index_vs_feature.png)
   
 * If we see horizontal line in such plots, it means there are repeated values and if there is no vertical lines, it means the data is shuffled nicely.
 * We can also color code based on labels.
@@ -118,7 +118,7 @@ plt.scatter(x,y)
 * for regression heatmap can be used.
 * Also we can compare the scatter plot in trianing and test set is same.
 
-    ![color_code_train_test](images/train_test_distribution.png)
+    ![color_code_train_test](/images/how_to_win/train_test_distribution.png)
 
 * The following graph show the diagonal realtion. The equation of a diagonal, x1 -> xaxis and x2-> y axis
 
@@ -126,13 +126,13 @@ $$x2<=1 -x1$$
 
 * The equation of diagonal line is $x1 + x2 = 1$
 
-![diagonal_equation](images/diagonal_relation.png)
+![diagonal_equation](/images/how_to_win/diagonal_relation.png)
 
 * Suppose we found this relaiton but how to use them. There are differet ways but for tree based model we can create the difference or ratio of these two features.
 
 * If we see the following scatter plot, we can see that there are some outliers. So we can remove them.
 
-     ![scatter plot](images/sc_plot2.png)
+     ![scatter plot](/images/how_to_win/sc_plot2.png)
 * So how this is helpful, our goat is to generate features. How to generate feature from this plot. As we see two traingles, we can create a feature  where each triangle will get a set of points and hope this feature will help.
 * If we have smaller number of features, we can use pandas for all features together.
 
@@ -151,11 +151,11 @@ df.corr(), plt.matshow(..)
 
 * if the matrix is a total mess like following
 
-![messy_matrix](images/use_k.png)
+![messy_matrix](/images/how_to_win/use_k.png)
 
 we can create some kind of clsutering and then plot them, like k means clustering or rows and columnd and reorder those features. The following plot is the result of k means clustering.
 
- ![ordered](images/k_means.png)
+ ![ordered](/images/how_to_win/k_means.png)
 
 #### Feature groups
 
@@ -174,7 +174,7 @@ y -> feature mean
 df.mean().sort_values().plot(style='.')
 ```
 
- ![ordered_feature_mean](images/sort_feature_mean.png)
+ ![ordered_feature_mean](/images/how_to_win/sort_feature_mean.png)
 
  * Now we can have close look to each group and use imagination to create new features.
 
