@@ -82,7 +82,7 @@
 * Sometimes in histogram you will see some spikes. It could be anything. Actually in particular case the organizer put the missing vlaue with its mean. We can change this value with other than mean.
 * we can also plot x is index and y is feature value. Not conenct with line but with circles only. ```python plt.plot(x,'.' )```
 
-    ![index_image](//images/how_to_win/how_to_win/index_vs_feature.png)
+    ![index_image](/images/how_to_win/index_vs_feature.png)
   
 * If we see horizontal line in such plots, it means there are repeated values and if there is no vertical lines, it means the data is shuffled nicely.
 * We can also color code based on labels.

@@ -1,6 +1,6 @@
 # EDA on Text data
 
-* This is a part of series. Previous part can be found [here](https://Hasangoni.github.io/2022/11/19/Exploring_anonymized_data.html). In this part I will try to write down about text data
+* This is a part of series. [First](https://Hasangoni.github.io/2022/11/19/Explanatory_data_analysis), [Second](https://Hasangoni.github.io/2022/11/19/Feature_preprocessing_and_generation.html), [Third](https://Hasangoni.github.io/2022/11/19/Exploring_anonymized_data.html) parts are connected in link.   In this part I will try to write down about text data
 # Feature extraction from text
 
 1. Bag of words
@@ -107,4 +107,4 @@ sklearn.feature_extraction.text.CountVectorizer(ngram_range=(1,2))
   * Values of vector can be interpreted only some cases
   * The words with simlar meaning will have similar embeddings
 
-__Next post can be found [here](https://Hasangoni.github.io/Feature_extraction_images.html)__
+__Next post can be found [here](https://Hasangoni.github.io/2022/11/19/Feature_extraction_images.html)__
