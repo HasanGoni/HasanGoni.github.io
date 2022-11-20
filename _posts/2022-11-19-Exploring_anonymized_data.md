@@ -124,7 +124,8 @@ plt.scatter(x,y)
 
 $$x2<=1 -x1$$
 
-* The equation of diagonal line is $x1 + x2 = 1$
+* The equation of diagonal line is 
+$ x1 + x2 = 1 $
 
 ![diagonal_equation](/images/how_to_win/diagonal_relation.png)
 
@@ -133,7 +134,8 @@ $$x2<=1 -x1$$
 * If we see the following scatter plot, we can see that there are some outliers. So we can remove them.
 
      ![scatter plot](/images/how_to_win/sc_plot2.png)
-* So how this is helpful, our goat is to generate features. How to generate feature from this plot. As we see two traingles, we can create a feature  where each triangle will get a set of points and hope this feature will help.
+
+* So how this is helpful, our goal is to generate features. How to generate feature from this plot. As we see two traingles, we can create a feature  where each triangle will get a set of points and hope this feature will help.
 * If we have smaller number of features, we can use pandas for all features together.
 
 ```python 
