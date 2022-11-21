@@ -29,11 +29,11 @@
 - Overfitting: If we use a very complex function, then it is called overfitting. In this case, model will perform good on training data, but it will perform bad on validation data.
 - Following figure shows the concept of underfitting and overfitting.
 
-![overfitting](/images/validaiton_and_overfitting_images/overfitting_and_underfitting.png)
+![overfitting](/images/validation_and_overfitting_images/overfitting_and_underfitting.png)
 
 - Another useful way to understand overfitting and underfitting is to use following figure.
 
-![overfitting](/images/validaiton_and_overfitting_images/model_complexity.png)
+![overfitting](/images/validation_and_overfitting_images/model_complexity.png)
 
 ## Validation Strategies
 
@@ -45,7 +45,7 @@
 
 ### Holdout validation
 
-```{mermaid}
+```mermaid
 flowchart TB
     A[data] --> B[Validation data]
     A[data] --> C[Training data]
@@ -65,7 +65,7 @@ from sklearn.model_selection import ShuffleSplit
 - Iterate though each fold: retrain the model on all folds except current fold, predict for the current fold.
 - Use the predictions to calculate quality on each fold. Find such hyper-parameters, that quality on each fold is maximized. You can also estimate mean and variance of the loss. This is very helpful in order to understand significance of improvement.
 
-```{mermaid}
+```mermaid
 flowchart TB
     A[data] --> B[Fold 1]
     B[Fold 1] --> C[Training data]

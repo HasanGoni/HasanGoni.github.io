@@ -16,7 +16,7 @@ This is the link of all blog posts categorized based on topics. At present it is
 
   * [Example Notebook for EDA](https://Hasangoni.github.io/2022/11/20/EDA_example.html)
 
-* [Validation Strategy and things to consider](https://Hasangoni.github.io/2022/11/21-Validation_and_overfitting.md)
+* [Validation Strategy and things to consider](https://Hasangoni.github.io/2022/11/21/Validation_and_overfitting.html)
 
 ## Cloud Computing
 
