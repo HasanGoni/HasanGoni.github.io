@@ -34,6 +34,7 @@ plugins:
   - jekyll-github-metadata
   - jekyll-remote-theme
   - jekyll-mermaid
+  - jekyll-spaceship
 
 titles_from_headings:
   enabled:     true
