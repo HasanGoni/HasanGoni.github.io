@@ -14,6 +14,9 @@ This is the link of all blog posts categorized based on topics. At present it is
 
   * [Feature Extraction From Images](https://Hasangoni.github.io/2022/11/19/Feature_extraction_images.html)
 
+  * [Example Notebook for EDA](https://Hasangoni.github.io/2022/11/20/EDA_example.html)
+
+* [Validation Strategy and things to consider](https://Hasangoni.github.io/2022/11/21-Validation_and_overfitting.md)
 
 ## Cloud Computing
 
