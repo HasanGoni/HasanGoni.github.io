@@ -12,7 +12,7 @@ E[Embedding of 7] --> B[Unet]
 
 - To train a model needs lots of GPU and computer power. So we use pre-trained model.
 
-```{mermaid}
+```mermaid
 flowchart LR
 A[Image of 7 + with noise \n *ignoring VAE] --> B[Unet] 
 B[Unet] --> C[prediciton of noise]
@@ -38,7 +38,7 @@ C[prediction of noise] --> F[Repeat]
   - __On Distillation of guided diffusion Models__
     - `Classifier free guided diffusion` is used in this paper. Following is the flow chart for classifier free diffusion model.
 
-    ```{mermaid}
+    ```mermaid
 
     flowchart TD
     A[Text prompt] -->B[Embedding]
@@ -88,5 +88,3 @@ final_image = pipe(
 images.append(final_image)
 images_grid(images, rows=1, cols=len(images))
 ```
-
-
