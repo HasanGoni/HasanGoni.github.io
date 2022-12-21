@@ -21,7 +21,7 @@ This is the link of all blog posts categorized based on topics. At present it is
 ## Fastai course description 2022
 
   * [Lesson 9 Description](https://hasangoni.github.io/2022/12/19/Lesson_9_2022.html)
-  * [Lesson 10 Description part one](https://hasangoni.github.io/2022/12/20/Lesson_10_2022_deep_learining_foundation_to_stable_diffusion_part_one.html)
+  * [Lesson 10 Description part one](https://hasangoni.github.io/2022/12/20/Lesson_10_2022_deep_learning_foundation_to_stable_diffusion_part_one.html)
 
 ## Cloud Computing
 
