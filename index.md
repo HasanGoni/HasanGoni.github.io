@@ -22,6 +22,8 @@ This is the link of all blog posts categorized based on topics. At present it is
 
   * [Lesson 9 Description](https://hasangoni.github.io/2022/12/19/Lesson_9_2022.html)
   * [Lesson 10 Description part one](https://hasangoni.github.io/2022/12/20/Lesson_10_2022_deep_learning_foundation_to_stable_diffusion_part_one.html)
+## Jeremy live coding description 2022
+  * [live-coding_1-4](https://hasangoni.github.io/2023/01/05/jeremy_live_coding_2022.html)
 
 ## Cloud Computing
 
