@@ -1,6 +1,8 @@
 This is the link of all blog posts categorized based on topics. At present it is not so much organized. I will try in future to make it more readable and user friendly. For my referece this is the link for [Markdown](https://guides.github.com/features/mastering-markdown/).
 
+## New papers Tutorial
 
+* [Nougat to read scientific PDFs](https://hasangoni.github.io/2023/11/27/2023-09-27/Nougat_to_read_scientific_PDFs.html)
 
 ## Data Science steps to follow
 
